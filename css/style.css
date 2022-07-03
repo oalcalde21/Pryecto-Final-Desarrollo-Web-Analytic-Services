@@ -1,0 +1,204 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.barraMenu {
+  color: rgb(8, 0, 51);
+  background-color: rgb(255, 255, 255); /*Color de fondo*/
+  width: 80%; /*Tamaño del cuadro contenedor*/
+  margin: auto;
+  /* max-width: 1200px; */
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.barraMenu li a {
+  color: #030335;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 15px;
+  display: inline-block;
+}
+.barraMenu img {
+  width: 300px;
+  height: 60px;
+  padding-right: 10px;
+  align-items: center;
+  justify-items: center;
+}
+.barraMenu h1 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+nav div {
+  display: flex;
+}
+
+.gridNosotros {
+  margin: auto;
+  background-color: #fff; /*Color de fondo*/
+  width: auto; /*Tamaño del cuadro contenedor*/
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  grid-template-rows: repeat(4, auto);
+  align-items: center;
+  justify-items: center;
+  grid-template-areas: "banner" "titulo" "texto" "boton";
+}
+.gridNosotros .bannerFondoEmpresa {
+  grid-area: banner;
+  height: 600px;
+  width: 100%;
+}
+.gridNosotros .tituloNosotros {
+  grid-area: titulo;
+  font-size: 200%;
+  font-family: "Roboto", sans-serif;
+  font-size: 57px;
+  padding-top: 40px;
+}
+.gridNosotros .textoNosotros {
+  grid-area: texto;
+  height: auto;
+  width: 90%;
+  padding-top: 40px;
+}
+.gridNosotros .botonNosotros {
+  text-align: center;
+  background: #030335;
+  color: #ffffff;
+  border-radius: 25px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: -2px -2px 6px 0 rgba(255, 255, 255, 0.2), 2px 2px 6px 0 rgba(61, 59, 59, 0.8);
+  grid-area: boton;
+  margin-top: 40px;
+}
+.gridNosotros .botonNosotros:hover {
+  transition: 1s;
+  box-shadow: inset -2px -2px 6px 0 rgba(255, 255, 255, 0.2), inset 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
+  background-color: #3a3881;
+  color: #ffffff;
+}
+
+.footer {
+  width: auto;
+  /* max-width: 1200px; */
+  height: 100px;
+  justify-content: space-between;
+  background-image: linear-gradient(rgb(25, 25, 65), rgb(0, 0, 0));
+  margin-top: 50px;
+  /* Configuracion del boton y su comportamiento */
+}
+.footer .footerDiv {
+  display: flex;
+  justify-items: right;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  width: auto;
+  /* max-width: 1200px; */
+}
+.footer .footerDiv button {
+  text-align: center;
+  background: #030335;
+  color: #ffffff;
+  border-radius: 25px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  box-shadow: -2px -2px 6px 0 rgba(255, 255, 255, 0.2), 2px 2px 6px 0 rgba(61, 59, 59, 0.8);
+}
+.footer .footerDiv button:hover {
+  transition: 1s;
+  box-shadow: inset -2px -2px 6px 0 rgba(255, 255, 255, 0.2), inset 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
+  background-color: #3a3881;
+  color: #ffffff;
+}
+.footer .footer__iconos {
+  color: rgb(8, 0, 51);
+  background-color: rgb(9, 11, 49); /*Color de fondo*/
+  width: 50px; /*Tamaño del cuadro contenedor*/
+  height: 50px;
+  display: flex;
+  text-align: right;
+  list-style: none;
+  justify-content: center;
+}
+.footer .footerOrden {
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+footer div {
+  display: flex;
+}
+
+.social-menu .social-menulista {
+  /* transform: translate(-50%, -50%); */
+  padding: 0;
+  display: flex;
+}
+.social-menu ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+.social-menu ul li .fa {
+  color: #000000;
+  font-size: 25px;
+  line-height: 50px;
+  transition: 0.5s;
+}
+.social-menu ul li .fa:hover {
+  color: #ffffff;
+}
+.social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  transition: 0.5s;
+  transform: translate(0, 0px);
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+  transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.social-menu ul li:nth-child(4) a:hover {
+  background-color: #cd201f;
+}
+.social-menu ul li:nth-child(5) a:hover {
+  background-color: #0077B5;
+}
+
+/*# sourceMappingURL=style.css.map */
