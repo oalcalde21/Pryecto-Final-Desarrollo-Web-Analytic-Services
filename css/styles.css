@@ -1,0 +1,1968 @@
+/* Se ponen todo en 0 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Se establece la fuente a usar en todo el body */
+body{
+    font-family: 'Roboto';
+}
+
+/*Barra del Header con imagen y Menu */
+/* Se configuro todo de la pagina para que pueda adaptarse al navegador pero todavia no pude centrar el contenido */
+/* Para que quede mejor visualmente se establecio un maxwidth de 1200px hasta poder centrar todo el contenido */
+.barraMenu{
+    color: rgb(8, 0, 51);
+    background-color: rgb(255, 255, 255); /*Color de fondo*/
+    width: 80%; /*Tamaño del cuadro contenedor*/
+    margin: auto;
+    /* max-width: 1200px; */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+/* Deja los items del nav de forma horizontal */
+nav div{
+    display: flex;
+}
+
+/* Borre los iconos de la lista desordenada y establece las carateristicas del texto del nav */
+.barraMenu li a{
+    color: #030335;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+}
+
+
+/* Tamaño y posicion de la imagen del nav */
+.barraMenu img {
+    width: 300px;
+    height: 60px;
+    padding-right: 10px;
+    align-items: center;
+    justify-items: center;
+} 
+
+/* Unico H1 de la web */
+.barraMenu h1 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    
+}
+
+/* CSS Index */
+
+/*Configuracion de Banner con imagenes*/
+.banner__Fondo {
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(1, 1, 72)); /*Color de fondo*/
+    width: auto; /*Tamaño del cuadro contenedor*/
+    /* max-width: 1200px; */
+    height: 350px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.banner__alinearImagenes {
+    grid-area: 1 / 1 / -3 / 6 ;
+    align-self: center;
+}
+
+.banner__Imagen1{
+    width: 250px;
+    height: 150px;
+    margin-top: 50px;
+    
+}
+.banner__Imagen2{
+    width: 250px;
+    height: 150px;
+    margin-top:50px;
+    margin-left: 10px;
+}
+.banner__Imagen3{
+    width: 250px;
+    height: 150px;
+    margin-top:50px;
+    margin-left: 10px;
+}
+
+/* Texto en el banner */
+
+.banner__alinearH2 {
+    grid-area: 2 / 1 / -2 / 6 ;
+    align-self: center;
+}
+.banner__Fondo h2 {
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+
+/* Configuracion de boton y su comportamiento  */
+
+.banner__alinearButton {
+    grid-area: 3 / 1 / -1 / 6 ;
+    align-self: center;
+}
+
+.banner__Fondo button {
+    text-align: center;
+    background: #ffffff;
+    border-radius: 25px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    box-shadow: -2px -2px 6px 0 rgba(255, 255, 255, 0.2), 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
+}
+.banner__Fondo button:hover {  
+    transition: 1s;
+    box-shadow: inset -2px -2px 6px 0 rgba(255, 255, 255, 0.2), inset 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
+}
+
+
+
+/*Seccion Media de la pagina*/
+
+.main__Fondo {
+    margin: auto;
+    background-color: rgb(255, 255, 255); /*Color de fondo*/
+    width: auto; /*Tamaño del cuadro contenedor*/
+    max-width: 1200px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(9, auto);
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+    "imgindices imgindices tittxtindices tittxtindices tittxtindices"
+    "imgindices imgindices tittxtindices tittxtindices tittxtindices"
+    ". . . . ."
+    "tittxtproductividad tittxtproductividad tittxtproductividad imgprod imgprod"
+    "tittxtproductividad tittxtproductividad tittxtproductividad imgprod imgprod"
+    ". . . . ."
+    "imghoras imghoras tittxthoras tittxthoras tittxthoras"
+    "imghoras imghoras tittxthoras tittxthoras tittxthoras"
+    "btnservicio btnservicio btnservicio btnservicio btnservicio"
+    ;
+}
+
+.main__TituloIndices {
+    justify-self: flex-start;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 900;
+    width: 90%;
+    /* max-width: 1200px; */
+    /* grid-area: tittxtindices */
+}
+
+.main__TextoIndices {
+    height: 40px;
+    width: auto;
+    /* grid-area: tittxtindices ; */
+    justify-self: left;
+    text-align: left;
+    width: 80%;
+}
+
+.main__TxtImgOrdenIndices{
+    grid-area: tittxtindices;
+}
+
+/* Bar Graph Vertical */
+.bar-graph .year {
+    -webkit-animation: fade-in-text 2.2s 0.1s infinite alternate;
+    -moz-animation: fade-in-text 2.2s 0.1s infinite alternate;
+    animation: fade-in-text 2.2s 0.1s infinite alternate;
+}
+
+.bar-graph-vertical {
+    margin-top: 80px;
+    max-width: 680px;
+    grid-area: imgindices
+}
+
+.bar-graph-vertical .bar-container {
+    float: left;
+    height: 150px;
+    margin-right: 8px;
+    position: relative;
+    text-align: center;
+    width: 40px;
+}
+
+.bar-graph-vertical .bar {
+    border-radius: 3px;
+    bottom: 40px;
+    position: absolute;
+    width: 40px;
+}
+
+.bar-graph-vertical .year {
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.bar-graph-two .bar::after {
+    -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+    -moz-animation: fade-in-text 2.2s 0.1s forwards;
+    animation: fade-in-text 2.2s 0.1s forwards;
+    color: #fff;
+    content: attr(data-percentage);
+    font-weight: 700;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    top: 24px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.bar-graph-two .bar-one .bar {
+    background-color: #64b2d1;
+    -webkit-animation: show-bar-one-vertical 2s 0.1s infinite alternate;
+            animation: show-bar-one-vertical 2s 0.1s infinite alternate;
+    -moz-animation: show-bar-one-vertical 2s 0.1s infinite alternate;
+}
+
+.bar-graph-two .bar-two .bar {
+    background-color: #64b2d1;
+    -webkit-animation: show-bar-two-vertical 2s 0.1s infinite alternate;
+            animation: show-bar-two-vertical 2s 0.1s infinite alternate;
+    -moz-animation: show-bar-two-vertical 2s 0.1s infinite alternate;
+}
+
+.bar-graph-two .bar-three .bar {
+    background-color: #64b2d1;
+    -webkit-animation: show-bar-three-vertical 2s 0.1s infinite alternate;
+            animation: show-bar-three-vertical 2s 0.1s infinite alternate;
+    -moz-animation: show-bar-three-vertical 2s 0.1s infinite alternate;
+}
+
+.bar-graph-two .bar-four .bar {
+    background-color: #64b2d1;
+    -webkit-animation: show-bar-four-vertical 2s 0.1s infinite alternate;
+            animation: show-bar-four-vertical 2s 0.1s infinite alternate;
+    -moz-animation: show-bar-four-vertical 2s 0.1s infinite alternate;
+}
+
+/* Fin de animacion barras */
+
+/* Animacion Grafica Circular */
+
+/* Circle Chart */
+.circle-chart-container {
+    clear: left;
+    float: left;
+    position: relative;
+    max-width: 165px;
+    width: 100%;
+    grid-area: imgprod ;
+}
+
+.circle-chart {
+    overflow: visible;
+}
+
+.circle-chart-circle {
+    animation: circle-chart-fill 3s infinite alternate;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+
+.circle-chart-two {
+    left: 6%;
+    max-width: 88%;
+    position: absolute;
+    top: 6%;
+}
+
+.circle-chart-three {
+    left: 12%;
+    max-width: 75%;
+    position: absolute;
+    top: 12%;
+}
+
+.circle-chart-percentage {
+    -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+    -moz-animation: fade-in-text 2.2s 0.1s forwards;
+    animation: fade-in-text 2.2s 0.1s forwards;
+    font-size: 22px;
+    font-weight: 700;
+    position: absolute;
+}
+
+.circle-chart-one-percentage {
+    color:#64B2D1 ;
+    left: 65px;
+    top: 40px;
+}
+
+.circle-chart-two-percentage {
+    color: #5292AC;
+    left: 40px;
+    top: 70px;
+}
+
+.circle-chart-three-percentage {
+    color: #061246;
+    left: 70px;
+    top: 100px;
+}
+
+/* Fin animacion grafica circular */
+
+.main__TituloProductividad {
+    /* grid-area: titprod ; */
+    justify-self: left;
+    text-align: start;
+    margin-bottom: 10px;
+    font-weight: 900;
+    width: 90%;
+    /* max-width: 1200px; */
+}
+
+.main__TitTxtProductividad{
+    grid-area: tittxtproductividad;
+    text-align: left;
+    width: 80%;
+}
+
+/* Reloj */
+
+.clock {
+    grid-area: imghoras;
+	position: relative;
+	height: 170px;
+	width: 170px;
+	background-color: #fff;
+	border-radius: 100%;
+	border: 10px solid #1c7395;
+    margin-top: 20px;
+}
+
+.clock .top {
+	position: absolute;
+	width: 3px;
+	height: 8px;
+	background-color: #262626;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.clock .right {
+	position: absolute;
+	width: 8px;
+	height: 3px;
+	background-color: #262626;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+.clock .bottom {
+	position: absolute;
+	width: 3px;
+	height: 8px;
+	background-color: #262626;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
+}
+.clock .left {
+	position: absolute;
+	width: 8px;
+	height: 3px;
+	background-color: #262626;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+}
+.clock .center {
+	height: 6px;
+	width: 6px;
+	background-color: #262626;
+	border-radius: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.clock .shadow {
+	background:linear-gradient(rgba(0, 0, 0, 0), 
+								rgba(0, 0, 0, 0.2));
+	height: 170px;
+	width: 170px;
+	position: absolute;
+    border-radius: 100%;
+	transform: rotate(360deg);
+}
+.clock .hour {
+	width: 3px;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	animation: time 3600s infinite linear;
+}
+.clock .hour:before {
+	content: "";
+	height: 60px;
+	width: 3px;
+	background-color: #262626;
+	position: absolute;
+	top: 30px;
+}
+
+.clock .minute {
+	width: 1px;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	animation: time 360s infinite linear;
+}
+.clock .minute:before {
+	position: absolute;
+	content: "";
+	background-color: #262626;
+	height: 40px;
+	width: 1px;
+	top: 50px;
+}
+.clock .second {
+	width: 2px;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	animation: time 15s infinite linear;
+}
+.clock .second:before {
+	position: absolute;
+	content: "";
+	background-color: #fd1111;
+	height: 45px;
+	width: 2px;
+	top: 45px;
+}
+
+/* Fin Reloj */
+
+.main__TituloHoras {
+    /* grid-area: tithoras ; */
+    justify-self: left;
+    text-align: start;
+    margin-bottom: 10px;
+    font-weight: 900;
+    width: 90%;
+    /* max-width: 1200px; */
+}
+
+
+.main__TextoHoras {
+    /* grid-area: txthoras ; */
+    justify-self: left;
+    text-align: left;
+}
+
+.main__TxtImgOrdenHoras{
+    grid-area: tittxthoras;
+    width: 80%;
+    margin: auto;
+}
+
+.main__DivBotonServicio{
+    width: auto;
+    /* max-width: 1200px; */
+    grid-area: btnservicio ;
+    align-self: center;
+    margin-top: 60px;
+}
+
+.main button{
+    text-align: center;
+    position: relative;
+    background: #030335;
+    color: #ffffff;
+    border-radius: 25px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: -2px -2px 6px 0 rgba(255, 255, 255, 0.2), 2px 2px 6px 0 rgba(61, 59, 59, 0.8);
+}
+
+
+
+.main button:hover {  
+    transition: 1s;
+    box-shadow: inset -2px -2px 6px 0 rgba(255, 255, 255, 0.2), inset 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
+    background-color: #3a3881;
+    color: #ffffff;
+}
+
+.mainOrden{
+    text-align: left;
+    width: auto;
+    /* max-width: 1200px; */
+}
+
+.main__TituloIndicesReverse {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: 900;
+    width: 100%;
+    /* max-width: 1200px; */
+}
+
+.mainOrdenInvertido{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 20px;
+}
+
+/* Fin CSS Index */
+
+/* CSS Nosotros */
+
+.gridNosotros {
+    margin: auto;
+    background-color: rgb(255, 255, 255); /*Color de fondo*/
+    width: auto; /*Tamaño del cuadro contenedor*/
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(4, auto);
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+    "banner"
+    "titulo"
+    "texto"
+    "boton"
+}
+
+.bannerFondoEmpresa {
+    grid-area: banner;
+    height: 600px;
+    width: 100%;
+}
+
+.tituloNosotros {
+    grid-area: titulo;
+    font-size: 200%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 57px;
+    padding-top: 40px;
+}
+
+.textoNosotros{
+    grid-area: texto;
+    height: auto;
+    width: 90%;
+    padding-top: 40px;
+}
+
+.botonNosotros{
+    text-align: center;
+    background: #030335;
+    color: #ffffff;
+    border-radius: 25px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: -2px -2px 6px 0 rgba(255, 255, 255, 0.2), 2px 2px 6px 0 rgba(61, 59, 59, 0.8);
+    grid-area: boton;
+    margin-top: 40px;
+}
+
+.botonNosotros:hover {  
+    transition: 1s;
+    box-shadow: inset -2px -2px 6px 0 rgba(255, 255, 255, 0.2), inset 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
+    background-color: #3a3881;
+    color: #ffffff;
+}
+
+
+/* FIN CSS Nosotros */
+
+/* CSS Contacto */
+
+.contactoH2{
+    color: white;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 23%;
+    font-size: 50px;
+}
+
+.contactoImagen{
+    height: 500px;
+    width: 100%;
+}
+
+.gridContacto {
+    margin: auto;
+    background-color: rgb(255, 255, 255); /*Color de fondo*/
+    width: 70%; /*Tamaño del cuadro contenedor*/
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(1, auto);
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+    "mapa form"
+}
+
+.gridContacto__Mapa {
+    grid-area: mapa;
+    margin-top: 50px;
+}
+
+.gridContacto iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.gridContacto__Form{
+    grid-area: form;
+    transform: translateY(-50);
+}
+
+.gridContacto__Titulo{
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+.gridContacto__Labels{
+    padding-bottom: 5px;
+    font-size: 16px;
+}
+
+/* Elimina las flechas del campo telefono */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+.gridContacto__Input{
+    height: 25px;
+    width: 300px;
+}
+
+.gridContacto__Suscribirse{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.gridContacto_Checkbox {
+    padding-top: 10px ;
+}
+
+/* Boton checkbox con slide */
+
+.toggle {
+--width: 50px;
+--height: calc(var(--width) / 2);
+--border-radius: calc(var(--height) / 2);
+
+display: inline-block;
+cursor: pointer;
+}
+
+.toggle__input {
+display: none;
+}
+
+.toggle__fill {
+position: relative;
+width: var(--width);
+height: var(--height);
+border-radius: var(--border-radius);
+background: #dddddd;
+transition: background 0.2s;
+}
+
+.toggle__input:checked ~ .toggle__fill {
+    background: linear-gradient(90deg, rgba(89,207,56,1) 0%, rgba(27,224,27,1) 4%, rgba(136,219,112,1) 71%);
+}
+
+.toggle__fill::after {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+height: var(--height);
+width: var(--height);
+background: #ffffff;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+border-radius: var(--border-radius);
+transition: transform 0.2s;
+}
+
+.toggle__input:checked ~ .toggle__fill::after {
+transform: translateX(var(--height));
+}
+
+/* Fin boton Checkbox */
+
+.gridContacto_Botones {
+    padding-top: 20px;
+    margin-left: 50px;
+}
+
+.gridContacto button{
+    text-align: center;
+    position: relative;
+    background: #030335;
+    color: #ffffff;
+    width: 100px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: -2px -2px 6px 0 rgba(255, 255, 255, 0.2), 2px 2px 6px 0 rgba(61, 59, 59, 0.8);
+    margin-right: 20px;
+}
+
+.girdContacto button:hover {  
+    transition: 1s;
+    box-shadow: inset -2px -2px 6px 0 rgba(255, 255, 255, 0.2), inset 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
+    background-color: #3a3881;
+    color: #ffffff;
+}
+
+/* FIN CSS Contacto */
+
+/* CSS  Servicios*/
+
+.bannerServicios {
+    width: 100%;
+    height: 500px;
+}
+
+.gridServicios {
+    margin: auto;
+    background-color: rgb(255, 255, 255); /*Color de fondo*/
+    width: 70%; /*Tamaño del cuadro contenedor*/
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min-max(50%));
+    grid-template-rows: repeat(5, auto);
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+    "titulo titulo"
+    "indice videoindice"
+    "prod videoprod"
+    "analisis videoanalisis"
+}
+
+.gridServicios iframe{
+    width: 450px;
+    height: 250px;
+}
+
+.gridServicios__Titulo {
+    grid-area: titulo;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.gridServicios__Subitulos{
+    margin-bottom: 10px;
+}
+
+.gridServicios__ParrafoIndice {
+    grid-area: indice;
+    margin-right: 20px;
+}
+
+.gridServicios__VideoIndice {
+    grid-area: videoindice;
+    margin-top: 30px;
+}
+
+.gridServicios__ParrafoProd {
+    grid-area: prod;
+    margin-right: 20px;
+}
+
+.gridServicios__VideoProd {
+    grid-area: videoprod;
+    margin-top: 30px;
+}
+
+.gridServicios__ParrafoAnalisis {
+    grid-area: analisis;
+    margin-right: 20px;
+}
+
+.gridServicios__VideoAnalisis {
+    grid-area: videoanalisis;
+    margin-top: 30px;
+}
+
+
+/* Fin CSS Servicios */
+
+/* CSS Clientes */
+
+.gridClientes {
+    margin: auto;
+    background-color: rgb(255, 255, 255); /*Color de fondo*/
+    width: 100%; /*Tamaño del cuadro contenedor*/
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(9, auto);
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+    "titulo titulo"
+    "imagenes imagenes"
+    "subtit subtit"
+    "foto1 texto1"
+    "foto2 texto2"
+    "foto3 texto3"
+    "foto4 texto4"
+    "foto5 texto5"
+    "boton boton"
+}
+
+.gridClientes__Titulo{
+    grid-area: titulo;
+    background-color: #030335;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 30px;
+}
+
+
+
+.gridClientes__Marcas{
+    grid-area: imagenes;
+    background-color: #030335;
+    color: white;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridClientes__Imagenes{
+    border-radius: 50%;
+    background-color: #030335;
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    border: white;
+    border-width: 8px;
+    border-style: solid;
+}
+
+.gridClientes__Imagenes-Apple{
+    border-radius: 50%;
+    background-color: #030335;
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    border: white;
+    border-width: 8px;
+    border-style: solid;
+    margin-left: 60px;
+}
+
+.gridClientes__SubTitulo{
+    grid-area: subtit;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 30px;
+}
+
+.gridClientes__FotoYTexto1{
+    grid-area: foto1;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.gridClientes__ImagensRedondas {
+    border-radius: 50%;
+    
+}
+
+.gridClientes__EspacioIMGTXT{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.gridClientes__Texto1{
+    grid-area: texto1;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.gridClientes__FotoYTexto2{
+    grid-area: foto2;
+    text-align: center;
+}
+
+.gridClientes__Texto2{
+    grid-area: texto2;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.gridClientes__FotoYTexto3{
+    grid-area: foto3;
+    text-align: center;
+}
+
+.gridClientes__Texto3{
+    grid-area: texto3;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.gridClientes__FotoYTexto4{
+    grid-area: foto4;
+    text-align: center;
+}
+
+.gridClientes__Texto4{
+    grid-area: texto4;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.gridClientes__FotoYTexto5{
+    grid-area: foto5;
+    text-align: center;
+}
+
+.gridClientes__Texto5{
+    grid-area: texto5;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.gridClientes__Boton {
+    grid-area: boton;
+}
+
+.gridClientes button{
+    text-align: center;
+    position: relative;
+    background: #030335;
+    color: #ffffff;
+    width: 100px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: -2px -2px 6px 0 rgba(255, 255, 255, 0.2), 2px 2px 6px 0 rgba(61, 59, 59, 0.8);
+    margin-top: 100px;
+}
+
+.gridClientes button:hover {  
+    transition: 1s;
+    box-shadow: inset -2px -2px 6px 0 rgba(255, 255, 255, 0.2), inset 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
+    background-color: #3a3881;
+    color: #ffffff;
+}
+
+/* Fin CSS Clientes */
+
+
+/* Empieza la configuracion del footer */
+
+.footer{
+    width: auto;
+    /* max-width: 1200px; */
+    height: 100px;
+    justify-content: space-between;
+    background-image: linear-gradient(rgb(25, 25, 65), rgb(0, 0, 0));;
+    margin-top: 50px;
+}
+
+
+.footerDiv {
+    display: flex;
+    justify-items: right;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    width: auto;
+    /* max-width: 1200px; */
+}
+
+.footer__iconos{
+    color: rgb(8, 0, 51);
+    background-color: rgb(9, 11, 49); /*Color de fondo*/
+    width: 50px; /*Tamaño del cuadro contenedor*/
+    height: 50px;
+    display: flex;
+    text-align: right;
+    list-style: none;
+    justify-content: center;
+}
+
+/* Configuracion del boton y su comportamiento */
+.footer button{
+    text-align: center;
+    background: #030335;
+    color: #ffffff;
+    border-radius: 25px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: -2px -2px 6px 0 rgba(255, 255, 255, 0.2), 2px 2px 6px 0 rgba(61, 59, 59, 0.8);
+}
+
+.footer button:hover {  
+    transition: 1s;
+    box-shadow: inset -2px -2px 6px 0 rgba(255, 255, 255, 0.2), inset 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
+    background-color: #3a3881;
+    color: #ffffff;
+}
+
+/* separa el boton de las imagenes una para cada lado */
+.footerOrden{
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    /* max-width: 1200px; */
+}
+
+/* .footerOrdenImagenes{
+    padding-right: 30px;
+} */
+
+footer div{
+    display: flex;
+}
+
+/* Iconos de Redes Sociales */
+
+.social-menulista {
+    /* transform: translate(-50%, -50%); */
+    padding: 0;
+    display: flex;
+}
+.social-menu ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+.social-menu ul li .fa {
+    color: #000000;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+}
+.social-menu ul li .fa:hover {
+    color: #ffffff;
+}
+.social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+.social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+    background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+    background-color: #55acee;
+}
+.social-menu ul li:nth-child(3) a:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.social-menu ul li:nth-child(4) a:hover {
+    background-color: #cd201f;
+}
+.social-menu ul li:nth-child(5) a:hover {
+    background-color: #0077B5;
+}
+
+/* Fin de iconos de redes sociales */
+
+/* Responsive */
+
+@media (max-width: 1240px){
+    
+    .barraMenu{
+        width: 98%;
+    }
+
+    .footerOrden{
+        width: 98%;
+    }
+    
+
+}
+
+@media (max-width: 1024px){
+
+    .barraMenu{
+        width: 98%;
+    }
+
+    .footerOrden{
+        width: 98%;
+    }
+
+    .gridServicios iframe {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .gridClientes{
+        width: 100%;
+    }
+
+    .gridClientes__Titulo{
+        width: 100%;
+    }
+
+    .contactoH2{
+        margin-left: 150px;
+    }
+
+}
+
+@media (max-width: 920px){
+
+    .gridContacto__Input{
+        width: 200px;
+    }
+
+    .gridContacto{
+        column-gap: 30px;
+    }
+
+    .bannerFondoEmpresa{
+        height: 550px;
+    }
+
+    .bannerServicios{
+        height: 550px;
+    }
+
+    .contactoImagen{
+        height: 400px;
+    }
+
+    .bannerServicios{
+        height: 400px;
+    }
+}
+
+@media (max-width: 850px){
+
+    .contactoH2{
+        margin-left: 80px;
+    }
+
+    .gridContacto_Botones{
+        margin-left: 10px;
+    }
+
+    .bannerFondoEmpresa{
+        height: 400px;
+    }
+
+    .bannerServicios{
+        height: 400px;
+    }
+
+    .contactoImagen{
+        height: 400px;
+    }
+
+    .contactoH2{
+        margin-top: 250px;
+    }
+}
+
+@media (max-width: 795px){
+
+    .banner__Imagen1{
+        width: 200px;
+    }
+
+    .banner__Imagen2{
+        width: 200px;
+    }
+
+    .banner__Imagen3{
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px){
+
+    .bannerFondoEmpresa{
+        height: 250px;
+    }
+
+    .bannerServicios{
+        height: 250px;
+    }
+
+    .contactoImagen{
+        height: 250px;
+    }
+
+    .contactoH2{
+        margin-top: 150px;
+    }
+
+    .gridContacto button{
+        width: 60px;
+        height: 30px;  
+        font-size: 12px; 
+    }
+
+    .barraMenu li a{
+        font-size: 12px;
+    }
+
+    .barraMenu img {
+        width: 250px;
+        height: 50px;
+    }
+
+    .gridClientes__Titulo {
+        font-size: 20px;
+    }
+
+    .gridClientes__Imagenes {
+        width: 150px;
+        height: 150px;
+    }
+
+    .gridClientes__Imagenes-Apple{
+        width: 150px;
+        height: 150px;
+    }
+
+    .gridServicios {
+        margin: auto;
+        background-color: rgb(255, 255, 255); /*Color de fondo*/
+        width: 70%; /*Tamaño del cuadro contenedor*/
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, min-max(50%));
+        grid-template-rows: repeat(7, auto);
+        align-items: center;
+        justify-items: center;
+        grid-row-gap: 30px;
+        grid-template-areas: 
+        "titulo"
+        "indice"
+        "videoindice"
+        "prod"
+        "videoprod"
+        "analisis"
+        "videoanalisis"
+    }
+}
+
+@media (max-width: 720px){
+
+    .gridClientes__Imagenes {
+        width: 100px;
+        height: 100px;
+    }
+
+    .gridClientes__Imagenes-Apple{
+        width: 100px;
+        height: 100px;
+    }
+
+    .main__Fondo{
+        grid-row-gap: 20px;
+    }
+}
+
+@media (max-width: 640px){
+
+    .banner__Imagen3{
+        display: none;
+    }
+
+    .banner__Fondo h2 {
+        font-size: 20px;
+    }
+
+    .banner__Fondo button {
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .clock{
+        height: 120px;
+        width: 120px;
+    }
+
+    .clock .shadow{
+        height: 120px;
+        width: 120px;
+    }
+
+    .clock .hour:before {
+        height: 35px;
+    }
+
+    .clock .minute:before{
+        height: 45px;
+        top: 15px;
+    }
+
+    .clock .second::before {
+        height: 40px;
+        top: 20px;
+    }
+
+    .main__TextoHoras{
+        font-size: 14px;
+    }
+
+    .main__TextoProductividad{
+        font-size: 14px;
+    }
+
+    .circle-chart-container {
+        max-width: 120px;
+    }
+
+    .circle-chart-one-percentage{
+        font-size: 15px;
+        left: 35px;
+        top: 30px;
+    }
+    .circle-chart-two-percentage{
+        font-size: 15px;
+        left: 55px;
+        top: 50px;
+    }
+
+    .circle-chart-three-percentage{
+        font-size: 15px;
+        left: 40px;
+        top: 75px;
+    }
+
+    .main__TextoIndices{
+        font-size: 14px;
+    }
+
+    .main__TituloIndices{
+        margin-top: 0px;
+    }
+
+    .bar-graph-vertical{
+        margin-top: 80px;
+    }
+
+    .bar-graph-vertical .bar-container{
+        height: 120px;
+        width: 30px;
+    }
+
+    .bar-graph-vertical .bar{
+        width: 30px;
+    }
+
+    .main button {
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .footer button {
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .social-menu ul li a {
+        height: 40px;
+        width: 40px;
+    }
+
+    .social-menu ul li .fa {
+        color: #000000;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .tituloNosotros{
+        font-size: 35px;
+    }
+
+    .botonNosotros {
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .gridNosotros p {
+        font-size: 13px
+    };
+
+    .gridServicios__Titulo{
+        font-size: 20px;
+    }
+
+    .gridClientes {
+        margin: auto;
+        background-color: rgb(255, 255, 255); /*Color de fondo*/
+        width: 100%; /*Tamaño del cuadro contenedor*/
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(14, auto);
+        align-items: center;
+        justify-items: center;
+        grid-template-areas: 
+        "titulo"
+        "imagenes"
+        "subtit"
+        "foto1" 
+        "texto1"
+        "foto2"
+        "texto2"
+        "foto3" 
+        "texto3"
+        "foto4" 
+        "texto4"
+        "foto5" 
+        "texto5"
+        "boton"
+    }
+
+    .gridClientes__EspacioIMGTXT{
+        margin-bottom: 0px;
+    }
+
+    .gridClientes__Texto1{
+        margin-bottom: 20px;
+    }
+
+    .gridClientes__Texto2{
+        margin-bottom: 20px;
+    }
+
+    .gridClientes__Texto3{
+        margin-bottom: 20px;
+    }
+
+    .gridClientes__Texto4{
+        margin-bottom: 20px;
+    }
+
+    .gridClientes__Texto5{
+        margin-bottom: 20px;
+    }
+
+    .gridClientes button {
+        margin-top: 40px;
+    }
+
+    .contactoH2{
+        font-size: 30px;
+        margin-left: 100px;
+    }
+
+    .gridContacto iframe {
+        height: 300px;
+    }
+
+    .gridContacto__Titulo{
+        padding-bottom: 5px;
+        padding-top: 20px;
+        font-size: 15px;
+    }
+
+    .gridContacto__Labels{
+        font-size: 12px;
+    }
+
+    .gridContacto__Suscribirse{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 640px){
+    .bannerServicios{
+        height: 200px;
+    }
+
+    .gridClientes__Texto1{
+        font-size: 13px;
+        width: 70%;
+    }
+
+    .gridClientes__Texto2{
+        font-size: 13px;
+        width: 70%;
+    }
+
+    .gridClientes__Texto3{
+        font-size: 13px;
+        width: 70%;
+    }
+
+    .gridClientes__Texto4{
+        font-size: 13px;
+        width: 70%;
+    }
+
+    .gridClientes__Texto5{
+        font-size: 13px;
+        width: 70%;
+    }
+
+@media (max-width: 580px){
+    .barraMenu{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .bannerServicios{
+        height: 150px;
+        grid-row-gap: 5px;
+    }
+
+    .gridServicios__Titulo{
+        font-size: 20px;
+    }
+
+    .gridServicios__ParrafoIndice{
+        font-size: 13px;
+    }
+
+    .gridServicios__ParrafoProd{
+        font-size: 13px;
+    }
+
+    .gridServicios__ParrafoAnalisis{
+        font-size: 13px;
+    }
+
+    .gridServicios iframe {
+        height: 150px;
+    }
+
+    .gridClientes__Imagenes{
+        height: 70px;
+        width: 70px;
+        border-width: 3px;
+    }
+
+    .gridClientes__Imagenes-Apple{
+        height: 70px;
+        width: 70px;
+        border-width: 3px;
+    }
+
+    .contactoImagen {
+        height: 200px;
+    }
+
+    .contactoH2{
+        margin-top: 100px;
+        margin-left: 70px;
+        font-size: 20px;
+    }
+
+    .gridContacto{
+        width: 90%;
+    }
+
+    .footerOrden{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerDiv{
+        padding-left: 0px;
+    }
+
+    .footer{
+        height: 150px;
+    }
+}
+
+@media (max-width: 580px){
+
+    .gridContacto{
+        margin: auto;
+    background-color: rgb(255, 255, 255); /*Color de fondo*/
+    width: 100%; /*Tamaño del cuadro contenedor*/
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(1, auto);
+    align-items: center;
+    justify-items: center;
+    column-gap: 0px;
+    grid-template-areas: 
+    "mapa" 
+    "form"
+    }
+
+    .gridContacto iframe {
+        width: 350px;
+    }
+
+    .gridClientes__Imagenes{
+        margin-right: 20px;
+    }
+
+    .gridClientes__Imagenes-Apple{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+}
+
+@media (max-width: 440px){
+
+    .banner__Fondo {
+        background-image: linear-gradient(rgb(0, 0, 0), rgb(1, 1, 72)); /*Color de fondo*/
+        width: auto; /*Tamaño del cuadro contenedor*/
+        /* max-width: 1200px; */
+        height: 350px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+
+    .banner__alinearImagenes {
+        grid-area: 1 / 1 / -4 / 6 ;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner__Imagen2{
+        display: none;
+    }
+
+    .banner__Imagen1{
+        margin-top: 20px;
+    }
+
+    .banner__Imagen2{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    .main__Fondo {
+        margin: auto;
+        background-color: rgb(255, 255, 255); /*Color de fondo*/
+        width: 90%; /*Tamaño del cuadro contenedor*/
+        max-width: 1200px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(7, auto);
+        align-items: center;
+        justify-items: center;
+        grid-template-areas: 
+        "imgindices"  
+        "tittxtindices"
+        "imgprod"
+        "tittxtproductividad"
+        "imghoras" 
+        "tittxthoras"
+        "btnservicio"
+        ;
+    }
+
+    .main__TituloIndices{
+        font-size: 15px;
+        padding-left: 15px;
+    }
+
+    .main__TextoIndices{
+        font-size: 13px;
+        height: auto;
+        width: 80%;
+        padding-left: 15px;
+    }
+
+    .main__TituloHoras{
+        font-size: 15px;
+        padding-left: 15px;
+    }
+
+    .main__TextoHoras{
+        font-size: 13px;
+        height: auto;
+        width: 80%;
+        padding-left: 15px;
+    }
+
+    .main__TituloProductividad{
+        font-size: 15px;
+        padding-left: 15px;
+    }
+
+    .main__TextoProductividad{
+        font-size: 13px;
+        height: auto;
+        width: 80%;
+        padding-left: 15px;
+    }
+
+    .bar-graph-vertical{
+        margin-left: 20px;
+    }
+
+    .bannerFondoEmpresa {
+        height: 200px;
+    }
+
+    .gridClientes h4 {
+        font-size: 25px;
+    }
+
+    .gridContacto_Botones{
+        margin-left: 40px;
+    }
+
+    .gridServicios{
+        width: 100%;
+        grid-row-gap: 10px;
+    }
+
+    .gridServicios__ParrafoIndice{
+        padding-left: 40px;
+        padding-top: 30px;
+    }
+
+    .gridServicios__ParrafoProd{
+        padding-left: 40px;
+        padding-top: 30px;
+    }
+
+    .gridServicios__ParrafoAnalisis{
+        padding-left: 40px;
+        padding-top: 30px;
+    }
+
+    .bar-graph-vertical{
+        margin-top: 50px;
+    }
+
+    .main__TxtImgOrdenIndices{
+        margin-left: 15%;
+        margin-bottom: 50px;
+    }
+
+    .main__TxtImgOrdenHoras{
+        margin-left: 15%;
+        margin-bottom: 10px;
+    }
+
+    .main__TitTxtProductividad{
+        margin-left: 15%;
+        margin-bottom: 50px;
+    }
+
+    .main__TextoProductividad{
+        padding-left: 0px;
+    }
+
+    .main__TituloProductividad{
+        padding-left: 0px;
+    }
+
+}
+
+.gridContacto iframe{
+    width: 100%;
+}
+
+.contactoImagen{
+    height: 120px;
+}
+
+.contactoH2{
+    margin-top: 70px;
+}
+
+.gridClientes h4{
+    font-size: 20px;
+}
+}
+
+@media (max-width: 360px){
+
+    .banner__Fondo h2{
+        font-size: 18px;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+    
+    .bannerServicios{
+        height: 120px;
+    }
+
+}
+
+/* Animacion Barras */
+@keyframes show-bar-one-vertical {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 40%;
+    }
+    }
+    
+    @keyframes show-bar-two-vertical {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 70%;
+    }
+    }
+    
+    @keyframes show-bar-three-vertical {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 50%;
+    }
+    }
+    
+    @keyframes show-bar-four-vertical {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 90%;
+    }
+    }
+    
+    /* Fin de animacion de barras */
+    
+    /* Animacion Circular */
+    
+    @keyframes fade-in-text {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    }
+    
+    @keyframes circle-chart-fill {
+        to { stroke-dasharray: 0 100; }
+    }
+    
+    /* Fin Animacion Circular */
+    
+    /* Animacion reloj */
+    
+    @keyframes time {
+        to {
+            transform: rotate(360deg);
+        }
+    } 
+    
+    /* Fin Animacion Reloj */

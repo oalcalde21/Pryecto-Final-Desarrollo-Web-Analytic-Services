@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="shorcut icon" href="../assets/icons/favicon-16x16.png"> <!--Muesta el icono en el titulo de pagina-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> <!--Carga la fuente de la pagina-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> <!--Carga los iconos de redes sociales-->
+</head>
+<body>
+    <header>
+        <nav class="barraMenu">
+            <div class="barraMenu_Flex">
+                <a href="/index.html"><img src="../assets/images/AS Letras Azules.png" width="150px" alt="logo"></a> <!--Carga el logo inicial-->
+            <!--Carga titulo de menu y los 5 botones-->
+                <!-- <h1>Analitics Services</h1> -->
+            </div>
+            <!-- Imagen y Titulo en un DIV y los botones en un segundo DIV para poder implementar el SpaceBetween -->
+            <div class="barraMenu:Flex">
+                <li><a href="../index.html"> Inicio</a></li>
+                <li><a href="../pages/nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="../pages/servicios.html">Servicios</a></li>
+                <li><a href="../pages/clientes.html"> Clientes</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </div>
+        </nav>
+    </header>
+
+    
+    <main>
+        <section> <!--Carga de imagenes, futuro slide-->
+            <img class="bannerServicios" src="../assets/images/bannerservicios.png" alt="banner servicios">
+            
+        </section>
+
+        <section class="gridServicios"><!--Titulo y menu con videos de presentacion-->
+            <!--Videos a modo de ejemplo por Servicios de IT, seria necesario crear video propios apuntando al tema mencionado-->
+            <div class="gridServicios__Titulo">
+                <h3>Servicios</h3>
+            </div>
+            <div class="gridServicios__ParrafoIndice">
+                <h4 class="gridServicios__Subitulos">Indice y Analisis de Mejora</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quaerat dolore quia adipisci quasi numquam laudantium laboriosam quisquam voluptatem, ea consequatur omnis cupiditate, temporibus, ratione corrupti error possimus nam assumenda!</p>
+            </div>
+            <div class="gridServicios__VideoIndice">
+                <iframe width="450px" height="250px" src="https://www.youtube.com/embed/zguEmWZnJQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="gridServicios__ParrafoProd">
+                <h4 class="gridServicios__Subitulos">Productividad</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quaerat dolore quia adipisci quasi numquam laudantium laboriosam quisquam voluptatem, ea consequatur omnis cupiditate, temporibus, ratione corrupti error possimus nam assumenda!</p>
+            </div>
+            <div class="gridServicios__VideoProd">
+                <iframe width="450" height="250" src="https://www.youtube.com/embed/WCEIvV6pLU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="gridServicios__ParrafoAnalisis">
+                <h4 class="gridServicios__Subitulos">Analisis</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quaerat dolore quia adipisci quasi numquam laudantium laboriosam quisquam voluptatem, ea consequatur omnis cupiditate, temporibus, ratione corrupti error possimus nam assumenda!</p>
+            </div>
+            <div class="gridServicios__VideoAnalisis">
+                <iframe width="450" height="250" src="https://www.youtube.com/embed/xMUWL44Z24s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer class="footer">
+        <!-- Los dos p por fuera de los div son para dibujar los dos marcos azules que dividen el footer del Main -->
+        <!-- Para la proxima entrega es probable que lleve el mismo fondo azul oscuro que el banner -->
+        <p class="footerp1"></p>
+        <!-- dos div en el boton y los logos para poder implementar SpaceBetween -->
+        <div class="footerOrden">
+            <div>
+                    <div class="footerDiv">
+                        <button onclick="window.location.href='../pages/contacto.html'" >Contacto</button>
+                    </div>
+            </div>
+            <div>
+                <div class="social-menu">
+                <ul class="social-menulista">
+                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <p class="footerp2"></p>
+        
+    </footer>
+
+</body>
+</html>

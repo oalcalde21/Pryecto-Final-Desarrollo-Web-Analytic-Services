@@ -1,0 +1,9 @@
+// Para mimificar el archivo despues de trabajar: sass --watch scss/style.scss css/style.min.css -s compressed
+// Css de ejemplo hasta pasar el proyecto
+header{
+    background-color: red;
+    margin: 0 auto;
+    li{
+        background-color: blue;
+    }
+}

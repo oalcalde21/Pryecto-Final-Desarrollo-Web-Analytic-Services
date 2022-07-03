@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <link rel="shorcut icon" href="../assets/icons/favicon-16x16.png"> <!--Muesta el icono en el titulo de pagina-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> <!--Carga la fuente de la pagina-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> <!--Carga los iconos de redes sociales-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=RRoboto:wght@700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="barraMenu">
+            <div class="barraMenu_Flex">
+                <a href="/index.html"><img src="../assets/images/AS Letras Azules.png" width="150px" alt="logo"></a> <!--Carga el logo inicial-->
+            <!--Carga titulo de menu y los 5 botones-->
+                <!-- <h1>Analitics Services</h1> -->
+            </div>
+            <!-- Imagen y Titulo en un DIV y los botones en un segundo DIV para poder implementar el SpaceBetween -->
+            <div class="barraMenu:Flex">
+                <li><a href="../index.html"> Inicio</a></li>
+                <li><a href="../pages/nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="../pages/servicios.html">Servicios</a></li>
+                <li><a href="../pages/clientes.html"> Clientes</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </div>
+        </nav>
+    </header>
+
+    
+    <main>
+
+        <section class="gridNosotros">
+            <img src="../assets/images/historiaymision.jpg" alt="historiaymision" class="bannerFondoEmpresa">
+            <h3 class="tituloNosotros">Misión Y Visión</h3>
+            <div class="textoNosotros">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officia voluptas consequatur repudiandae error hic, repellendus aliquam illum possimus repellat neque tempora quidem placeat autem ullam mollitia dolore accusantium necessitatibus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officia voluptas consequatur repudiandae error hic,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officia voluptas consequatur repudiandae error hic,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officia voluptas consequatur repudiandae error hic.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A commodi nisi earum perferendis veritatis dolores voluptatum illum veniam tempore, accusantium eaque debitis quia! Molestiae quod voluptatem necessitatibus veniam quibusdam nam.Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur totam praesentium dolor ullam veniam, facilis rerum officia. Molestiae nobis dicta sed deleniti numquam, eum perspiciatis accusantium, cupiditate, ad placeat reiciendis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur totam praesentium dolor ullam veniam, facilis rerum officia. Molestiae nobis dicta sed deleniti numquam, eum perspiciatis accusantium, cupiditate, ad placeat reiciendis.Dignissimos officia voluptas consequatur repudiandae error hic,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officia voluptas consequatur repudiandae error hic,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos officia voluptas consequatur repudiandae error hic.</p>
+            </div>
+            <button class="botonNosotros" onclick="window.location.href='../pages/servicios.html'" >SERVICIOS</button>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <!-- Los dos p por fuera de los div son para dibujar los dos marcos azules que dividen el footer del Main -->
+        <!-- Para la proxima entrega es probable que lleve el mismo fondo azul oscuro que el banner -->
+        <p class="footerp1"></p>
+        <!-- dos div en el boton y los logos para poder implementar SpaceBetween -->
+        <div class="footerOrden">
+            <div>
+                    <div class="footerDiv">
+                        <button onclick="window.location.href='../pages/contacto.html'" >Contacto</button>
+                    </div>
+            </div>
+            <div>
+                <div class="social-menu">
+                <ul class="social-menulista">
+                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <p class="footerp2"></p>
+        
+    </footer>
+</body>
+</html>

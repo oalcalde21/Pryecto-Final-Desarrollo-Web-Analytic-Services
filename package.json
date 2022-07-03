@@ -1,0 +1,19 @@
+{
+  "name": "analyticsservices",
+  "version": "1.0.0",
+  "description": "Proyecto Analitics Services",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass style.scss css/style.min.css -w --no-source-map -s compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oalcalde21/AnalyticsServices.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oalcalde21/AnalyticsServices/issues"
+  },
+  "homepage": "https://github.com/oalcalde21/AnalyticsServices#readme"
+}

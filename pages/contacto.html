@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shorcut icon" href="../assets/icons/favicon-16x16.png"> <!--Muesta el icono en el titulo de pagina-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> <!--Carga la fuente de la pagina-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> <!--Carga los iconos de redes sociales-->
+</head>
+<body>
+    <header>
+        <nav class="barraMenu">
+            <div class="barraMenu_Flex">
+                <a href="/index.html"><img src="../assets/images/AS Letras Azules.png" width="150px" alt="logo"></a> <!--Carga el logo inicial-->
+            <!--Carga titulo de menu y los 5 botones-->
+                <!-- <h1>Analitics Services</h1> -->
+            </div>
+            <!-- Imagen y Titulo en un DIV y los botones en un segundo DIV para poder implementar el SpaceBetween -->
+            <div class="barraMenu:Flex">
+                <li><a href="../index.html"> Inicio</a></li>
+                <li><a href="../pages/nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="../pages/servicios.html">Servicios</a></li>
+                <li><a href="../pages/clientes.html"> Clientes</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <h2 class="contactoH2">Contacto</h2>
+        <img class="contactoImagen" src="../assets/images/contacto.jpg" alt="">
+        <div class="gridContacto">
+                <form class="gridContacto__Form"><!-- action="enviar.js" para configurar una accion en el boton-->
+                    <h4 class="gridContacto__Titulo">Complete sus datos por favor:</h4>
+                    <div class="gridContacto__Labels">
+                        <label for="nombre">Nombre:</label>
+                        <p></p>
+                        <input class="gridContacto__Input" type="name" name="nombre" id="nombre">
+                    </div>
+                    <div class="gridContacto__Labels">
+                        <label for="telefono">Telefono:</label>
+                        <p></p>
+                        <input class="gridContacto__Input" type="number" name="telefono" id="telefono">
+                    </div>
+                    <div class="gridContacto__Labels">
+                        <label for="correo">Correo Electronico:</label>
+                        <p></p>
+                        <input class="gridContacto__Input" type="email" name="correo" id="correo">
+                    </div>
+                    <div class="gridContacto__Suscribirse">
+                        <p>Subscribirse a Boletin Informativo:</p>
+                    </div>
+                    <div class="gridContacto_Checkbox">
+                        <label class="toggle" for="myToggle">
+                            <input class="toggle__input" name="" type="checkbox" id="myToggle">
+                            <div class="toggle__fill"></div>
+                        </label>
+                    </div>
+                    <!-- Aca deberia ir el check con Slide pero por ahora va a ir la opcion de elegir si o no hasta poder darle estilo al checkbox -->
+                    <!-- <input type="checkbox"> -->
+                    <div class="gridContacto_Botones">
+                        <button type="submit">ENVIAR</button>
+                        <button type="reset" class="gridMapa">LIMPIAR</button><!-- se puede eliminar al agregar validacion de datos-->
+                    </div>
+                    </form>
+            <section class="gridContacto__Mapa"> <!--Mapa-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13104.092745100887!2d-55.92476640168458!3d-34.805358518467415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f8a3dfd91dc27%3A0xed5b0dc865d78187!2sANCAP!5e0!3m2!1ses!2suy!4v1650310695342!5m2!1ses!2suy" width="450px" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Los dos p por fuera de los div son para dibujar los dos marcos azules que dividen el footer del Main -->
+        <!-- Para la proxima entrega es probable que lleve el mismo fondo azul oscuro que el banner -->
+        <p class="footerp1"></p>
+        <!-- dos div en el boton y los logos para poder implementar SpaceBetween -->
+        <div class="footerOrden">
+            <div>
+                    <div class="footerDiv">
+                        <button onclick="window.location.href='../pages/contacto.html'" >Contacto</button>
+                    </div>
+            </div>
+            <div>
+                <div class="social-menu">
+                <ul class="social-menulista">
+                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <p class="footerp2"></p>
+        
+    </footer>
+
+</body>
+</html>
