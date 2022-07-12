@@ -1110,6 +1110,9 @@ input::-webkit-inner-spin-button {
   .contactoH2 {
     margin-left: 150px;
   }
+  .gridNosotros .bannerFondoEmpresa {
+    height: 500px;
+  }
 }
 @media (max-width: 920px) {
   .gridContacto__Input {
@@ -1129,6 +1132,9 @@ input::-webkit-inner-spin-button {
   }
   .bannerServicios {
     height: 400px;
+  }
+  .gridNosotros .bannerFondoEmpresa {
+    height: 500px;
   }
 }
 @media (max-width: 850px) {
@@ -1150,6 +1156,9 @@ input::-webkit-inner-spin-button {
   .contactoH2 {
     margin-top: 250px;
   }
+  .gridNosotros .bannerFondoEmpresa {
+    height: 500px;
+  }
 }
 @media (max-width: 795px) {
   .banner__Imagen1 {
@@ -1160,6 +1169,9 @@ input::-webkit-inner-spin-button {
   }
   .banner__Imagen3 {
     width: 200px;
+  }
+  .gridNosotros .bannerFondoEmpresa {
+    height: 500px;
   }
 }
 @media (max-width: 768px) {
@@ -1211,6 +1223,9 @@ input::-webkit-inner-spin-button {
     grid-row-gap: 30px;
     grid-template-areas: "titulo" "indice" "videoindice" "prod" "videoprod" "analisis" "videoanalisis";
   }
+  .gridNosotros .bannerFondoEmpresa {
+    height: 450px;
+  }
 }
 @media (max-width: 720px) {
   .gridClientes__Imagenes {
@@ -1223,6 +1238,9 @@ input::-webkit-inner-spin-button {
   }
   .main__Fondo {
     grid-row-gap: 20px;
+  }
+  .gridNosotros .bannerFondoEmpresa {
+    height: 450px;
   }
 }
 @media (max-width: 640px) {
@@ -1380,6 +1398,9 @@ input::-webkit-inner-spin-button {
   .gridContacto__Suscribirse {
     font-size: 15px;
   }
+  .gridNosotros .bannerFondoEmpresa {
+    height: 400px;
+  }
 }
 @media (max-width: 640px) {
   .bannerServicios {
@@ -1405,8 +1426,11 @@ input::-webkit-inner-spin-button {
     font-size: 13px;
     width: 70%;
   }
+  .gridNosotros .bannerFondoEmpresa {
+    height: 350px;
+  }
 }
-@media (max-width: 640px) and (max-width: 580px) {
+@media (max-width: 580px) {
   .barraMenu {
     display: flex;
     flex-direction: column;
@@ -1463,7 +1487,7 @@ input::-webkit-inner-spin-button {
     height: 150px;
   }
 }
-@media (max-width: 640px) and (max-width: 580px) {
+@media (max-width: 580px) {
   .gridContacto {
     margin: auto;
     background-color: rgb(255, 255, 255); /*Color de fondo*/
@@ -1487,8 +1511,14 @@ input::-webkit-inner-spin-button {
     margin-right: 20px;
     margin-left: 20px;
   }
+  .footer .footerDiv {
+    padding-left: 0px;
+  }
+  .gridNosotros .bannerFondoEmpresa {
+    height: 300px;
+  }
 }
-@media (max-width: 640px) and (max-width: 440px) {
+@media (max-width: 440px) {
   .banner__Fondo {
     background-image: linear-gradient(rgb(0, 0, 0), rgb(1, 1, 72)); /*Color de fondo*/
     width: auto; /*Tamaño del cuadro contenedor*/
@@ -1608,25 +1638,20 @@ input::-webkit-inner-spin-button {
   .main__TituloProductividad {
     padding-left: 0px;
   }
-}
-@media (max-width: 640px) {
   .gridContacto iframe {
     width: 100%;
   }
-}
-@media (max-width: 640px) {
   .contactoImagen {
     height: 120px;
   }
-}
-@media (max-width: 640px) {
   .contactoH2 {
     margin-top: 70px;
   }
-}
-@media (max-width: 640px) {
   .gridClientes h4 {
     font-size: 20px;
+  }
+  .gridNosotros .bannerFondoEmpresa {
+    height: 200px;
   }
 }
 @media (max-width: 360px) {
@@ -1639,6 +1664,9 @@ input::-webkit-inner-spin-button {
   }
   .bannerServicios {
     height: 120px;
+  }
+  .gridNosotros .bannerFondoEmpresa {
+    height: 150px;
   }
 }
 /* Animacion Barras */
