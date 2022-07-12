@@ -1,0 +1,183 @@
+/* CSS Clientes */
+
+.gridClientes {
+    margin: auto;
+    background-color: rgb(255, 255, 255); /*Color de fondo*/
+    width: 100%; /*Tamaño del cuadro contenedor*/
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(9, auto);
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+    "titulo titulo"
+    "imagenes imagenes"
+    "subtit subtit"
+    "foto1 texto1"
+    "foto2 texto2"
+    "foto3 texto3"
+    "foto4 texto4"
+    "foto5 texto5"
+    "boton boton"
+}
+
+.gridClientes__Titulo{
+    grid-area: titulo;
+    background-color: #030335;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 30px;
+}
+
+
+
+.gridClientes__Marcas{
+    grid-area: imagenes;
+    background-color: #030335;
+    color: white;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridClientes__Imagenes{
+    border-radius: 50%;
+    background-color: #030335;
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    border: white;
+    border-width: 8px;
+    border-style: solid;
+}
+
+.gridClientes__Imagenes-Apple{
+    border-radius: 50%;
+    background-color: #030335;
+    width: 150px;
+    height: 150px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    border: white;
+    border-width: 8px;
+    border-style: solid;
+    margin-left: 60px;
+}
+
+.gridClientes__SubTitulo{
+    grid-area: subtit;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 30px;
+}
+
+.gridClientes__FotoYTexto1{
+    grid-area: foto1;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.gridClientes__ImagensRedondas {
+    border-radius: 50%;
+    
+}
+
+.gridClientes__EspacioIMGTXT{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.gridClientes__Texto1{
+    grid-area: texto1;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.gridClientes__FotoYTexto2{
+    grid-area: foto2;
+    text-align: center;
+}
+
+.gridClientes__Texto2{
+    grid-area: texto2;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.gridClientes__FotoYTexto3{
+    grid-area: foto3;
+    text-align: center;
+}
+
+.gridClientes__Texto3{
+    grid-area: texto3;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.gridClientes__FotoYTexto4{
+    grid-area: foto4;
+    text-align: center;
+}
+
+.gridClientes__Texto4{
+    grid-area: texto4;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.gridClientes__FotoYTexto5{
+    grid-area: foto5;
+    text-align: center;
+}
+
+.gridClientes__Texto5{
+    grid-area: texto5;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.gridClientes__Boton {
+    grid-area: boton;
+}
+
+.gridClientes button{
+    text-align: center;
+    position: relative;
+    background: #030335;
+    color: #ffffff;
+    width: 100px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: -2px -2px 6px 0 rgba(255, 255, 255, 0.2), 2px 2px 6px 0 rgba(61, 59, 59, 0.8);
+    margin-top: 100px;
+}
+
+.gridClientes button:hover {  
+    transition: 1s;
+    box-shadow: inset -2px -2px 6px 0 rgba(255, 255, 255, 0.2), inset 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
+    background-color: #3a3881;
+    color: #ffffff;
+}
+
+/* Fin CSS Clientes */

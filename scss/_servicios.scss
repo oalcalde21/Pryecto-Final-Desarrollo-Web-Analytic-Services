@@ -1,0 +1,71 @@
+/* CSS  Servicios*/
+
+.bannerServicios {
+    width: 100%;
+    height: 500px;
+}
+
+.gridServicios {
+    margin: auto;
+    background-color: rgb(255, 255, 255); /*Color de fondo*/
+    width: 70%; /*Tamaño del cuadro contenedor*/
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min-max(50%));
+    grid-template-rows: repeat(5, auto);
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+    "titulo titulo"
+    "indice videoindice"
+    "prod videoprod"
+    "analisis videoanalisis"
+}
+
+.gridServicios iframe{
+    width: 450px;
+    height: 250px;
+}
+
+.gridServicios__Titulo {
+    grid-area: titulo;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.gridServicios__Subitulos{
+    margin-bottom: 10px;
+}
+
+.gridServicios__ParrafoIndice {
+    grid-area: indice;
+    margin-right: 20px;
+}
+
+.gridServicios__VideoIndice {
+    grid-area: videoindice;
+    margin-top: 30px;
+}
+
+.gridServicios__ParrafoProd {
+    grid-area: prod;
+    margin-right: 20px;
+}
+
+.gridServicios__VideoProd {
+    grid-area: videoprod;
+    margin-top: 30px;
+}
+
+.gridServicios__ParrafoAnalisis {
+    grid-area: analisis;
+    margin-right: 20px;
+}
+
+.gridServicios__VideoAnalisis {
+    grid-area: videoanalisis;
+    margin-top: 30px;
+}
+
+
+/* Fin CSS Servicios */

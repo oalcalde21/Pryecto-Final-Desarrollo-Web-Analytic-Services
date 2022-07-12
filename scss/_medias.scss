@@ -1,0 +1,733 @@
+/* Responsive */
+
+@media (max-width: 1240px){
+    
+    .barraMenu{
+        width: 98%;
+    }
+
+    .footerOrden{
+        width: 98%;
+    }
+    
+
+}
+
+@media (max-width: 1024px){
+
+    .barraMenu{
+        width: 98%;
+    }
+
+    .footerOrden{
+        width: 98%;
+    }
+
+    .gridServicios iframe {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .gridClientes{
+        width: 100%;
+    }
+
+    .gridClientes__Titulo{
+        width: 100%;
+    }
+
+    .contactoH2{
+        margin-left: 150px;
+    }
+
+}
+
+@media (max-width: 920px){
+
+    .gridContacto__Input{
+        width: 200px;
+    }
+
+    .gridContacto{
+        column-gap: 30px;
+    }
+
+    .bannerFondoEmpresa{
+        height: 550px;
+    }
+
+    .bannerServicios{
+        height: 550px;
+    }
+
+    .contactoImagen{
+        height: 400px;
+    }
+
+    .bannerServicios{
+        height: 400px;
+    }
+}
+
+@media (max-width: 850px){
+
+    .contactoH2{
+        margin-left: 80px;
+    }
+
+    .gridContacto_Botones{
+        margin-left: 10px;
+    }
+
+    .bannerFondoEmpresa{
+        height: 400px;
+    }
+
+    .bannerServicios{
+        height: 400px;
+    }
+
+    .contactoImagen{
+        height: 400px;
+    }
+
+    .contactoH2{
+        margin-top: 250px;
+    }
+}
+
+@media (max-width: 795px){
+
+    .banner__Imagen1{
+        width: 200px;
+    }
+
+    .banner__Imagen2{
+        width: 200px;
+    }
+
+    .banner__Imagen3{
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px){
+
+    .bannerFondoEmpresa{
+        height: 250px;
+    }
+
+    .bannerServicios{
+        height: 250px;
+    }
+
+    .contactoImagen{
+        height: 250px;
+    }
+
+    .contactoH2{
+        margin-top: 150px;
+    }
+
+    .gridContacto button{
+        width: 60px;
+        height: 30px;  
+        font-size: 12px; 
+    }
+
+    .barraMenu li a{
+        font-size: 12px;
+    }
+
+    .barraMenu img {
+        width: 250px;
+        height: 50px;
+    }
+
+    .gridClientes__Titulo {
+        font-size: 20px;
+    }
+
+    .gridClientes__Imagenes {
+        width: 150px;
+        height: 150px;
+    }
+
+    .gridClientes__Imagenes-Apple{
+        width: 150px;
+        height: 150px;
+    }
+
+    .gridServicios {
+        margin: auto;
+        background-color: rgb(255, 255, 255); /*Color de fondo*/
+        width: 70%; /*Tamaño del cuadro contenedor*/
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, min-max(50%));
+        grid-template-rows: repeat(7, auto);
+        align-items: center;
+        justify-items: center;
+        grid-row-gap: 30px;
+        grid-template-areas: 
+        "titulo"
+        "indice"
+        "videoindice"
+        "prod"
+        "videoprod"
+        "analisis"
+        "videoanalisis"
+    }
+}
+
+@media (max-width: 720px){
+
+    .gridClientes__Imagenes {
+        width: 100px;
+        height: 100px;
+    }
+
+    .gridClientes__Imagenes-Apple{
+        width: 100px;
+        height: 100px;
+    }
+
+    .main__Fondo{
+        grid-row-gap: 20px;
+    }
+}
+
+@media (max-width: 640px){
+
+    .banner__Imagen3{
+        display: none;
+    }
+
+    .banner__Fondo h2 {
+        font-size: 20px;
+    }
+
+    .banner__Fondo button {
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .clock{
+        height: 120px;
+        width: 120px;
+    }
+
+    .clock .shadow{
+        height: 120px;
+        width: 120px;
+    }
+
+    .clock .hour:before {
+        height: 35px;
+    }
+
+    .clock .minute:before{
+        height: 45px;
+        top: 15px;
+    }
+
+    .clock .second::before {
+        height: 40px;
+        top: 20px;
+    }
+
+    .main__TextoHoras{
+        font-size: 14px;
+    }
+
+    .main__TextoProductividad{
+        font-size: 14px;
+    }
+
+    .circle-chart-container {
+        max-width: 120px;
+    }
+
+    .circle-chart-one-percentage{
+        font-size: 15px;
+        left: 35px;
+        top: 30px;
+    }
+    .circle-chart-two-percentage{
+        font-size: 15px;
+        left: 55px;
+        top: 50px;
+    }
+
+    .circle-chart-three-percentage{
+        font-size: 15px;
+        left: 40px;
+        top: 75px;
+    }
+
+    .main__TextoIndices{
+        font-size: 14px;
+    }
+
+    .main__TituloIndices{
+        margin-top: 0px;
+    }
+
+    .bar-graph-vertical{
+        margin-top: 80px;
+    }
+
+    .bar-graph-vertical .bar-container{
+        height: 120px;
+        width: 30px;
+    }
+
+    .bar-graph-vertical .bar{
+        width: 30px;
+    }
+
+    .main button {
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .footer button {
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .social-menu ul li a {
+        height: 40px;
+        width: 40px;
+    }
+
+    .social-menu ul li .fa {
+        color: #000000;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .tituloNosotros{
+        font-size: 35px;
+    }
+
+    .botonNosotros {
+        width: 80px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    .gridNosotros p {
+        font-size: 13px
+    };
+
+    .gridServicios__Titulo{
+        font-size: 20px;
+    }
+
+    .gridClientes {
+        margin: auto;
+        background-color: rgb(255, 255, 255); /*Color de fondo*/
+        width: 100%; /*Tamaño del cuadro contenedor*/
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(14, auto);
+        align-items: center;
+        justify-items: center;
+        grid-template-areas: 
+        "titulo"
+        "imagenes"
+        "subtit"
+        "foto1" 
+        "texto1"
+        "foto2"
+        "texto2"
+        "foto3" 
+        "texto3"
+        "foto4" 
+        "texto4"
+        "foto5" 
+        "texto5"
+        "boton"
+    }
+
+    .gridClientes__EspacioIMGTXT{
+        margin-bottom: 0px;
+    }
+
+    .gridClientes__Texto1{
+        margin-bottom: 20px;
+    }
+
+    .gridClientes__Texto2{
+        margin-bottom: 20px;
+    }
+
+    .gridClientes__Texto3{
+        margin-bottom: 20px;
+    }
+
+    .gridClientes__Texto4{
+        margin-bottom: 20px;
+    }
+
+    .gridClientes__Texto5{
+        margin-bottom: 20px;
+    }
+
+    .gridClientes button {
+        margin-top: 40px;
+    }
+
+    .contactoH2{
+        font-size: 30px;
+        margin-left: 100px;
+    }
+
+    .gridContacto iframe {
+        height: 300px;
+    }
+
+    .gridContacto__Titulo{
+        padding-bottom: 5px;
+        padding-top: 20px;
+        font-size: 15px;
+    }
+
+    .gridContacto__Labels{
+        font-size: 12px;
+    }
+
+    .gridContacto__Suscribirse{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 640px){
+    .bannerServicios{
+        height: 200px;
+    }
+
+    .gridClientes__Texto1{
+        font-size: 13px;
+        width: 70%;
+    }
+
+    .gridClientes__Texto2{
+        font-size: 13px;
+        width: 70%;
+    }
+
+    .gridClientes__Texto3{
+        font-size: 13px;
+        width: 70%;
+    }
+
+    .gridClientes__Texto4{
+        font-size: 13px;
+        width: 70%;
+    }
+
+    .gridClientes__Texto5{
+        font-size: 13px;
+        width: 70%;
+    }
+
+@media (max-width: 580px){
+    .barraMenu{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .bannerServicios{
+        height: 150px;
+        grid-row-gap: 5px;
+    }
+
+    .gridServicios__Titulo{
+        font-size: 20px;
+    }
+
+    .gridServicios__ParrafoIndice{
+        font-size: 13px;
+    }
+
+    .gridServicios__ParrafoProd{
+        font-size: 13px;
+    }
+
+    .gridServicios__ParrafoAnalisis{
+        font-size: 13px;
+    }
+
+    .gridServicios iframe {
+        height: 150px;
+    }
+
+    .gridClientes__Imagenes{
+        height: 70px;
+        width: 70px;
+        border-width: 3px;
+    }
+
+    .gridClientes__Imagenes-Apple{
+        height: 70px;
+        width: 70px;
+        border-width: 3px;
+    }
+
+    .contactoImagen {
+        height: 200px;
+    }
+
+    .contactoH2{
+        margin-top: 100px;
+        margin-left: 70px;
+        font-size: 20px;
+    }
+
+    .gridContacto{
+        width: 90%;
+    }
+
+    .footerOrden{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerDiv{
+        padding-left: 0px;
+    }
+
+    .footer{
+        height: 150px;
+    }
+}
+
+@media (max-width: 580px){
+
+    .gridContacto{
+        margin: auto;
+    background-color: rgb(255, 255, 255); /*Color de fondo*/
+    width: 100%; /*Tamaño del cuadro contenedor*/
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(1, auto);
+    align-items: center;
+    justify-items: center;
+    column-gap: 0px;
+    grid-template-areas: 
+    "mapa" 
+    "form"
+    }
+
+    .gridContacto iframe {
+        width: 350px;
+    }
+
+    .gridClientes__Imagenes{
+        margin-right: 20px;
+    }
+
+    .gridClientes__Imagenes-Apple{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+}
+
+@media (max-width: 440px){
+
+    .banner__Fondo {
+        background-image: linear-gradient(rgb(0, 0, 0), rgb(1, 1, 72)); /*Color de fondo*/
+        width: auto; /*Tamaño del cuadro contenedor*/
+        /* max-width: 1200px; */
+        height: 350px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        align-items: center;
+        justify-items: center;
+    }
+
+    .banner__alinearImagenes {
+        grid-area: 1 / 1 / -4 / 6 ;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner__Imagen2{
+        display: none;
+    }
+
+    .banner__Imagen1{
+        margin-top: 20px;
+    }
+
+    .banner__Imagen2{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    .main__Fondo {
+        margin: auto;
+        background-color: rgb(255, 255, 255); /*Color de fondo*/
+        width: 90%; /*Tamaño del cuadro contenedor*/
+        max-width: 1200px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(7, auto);
+        align-items: center;
+        justify-items: center;
+        grid-template-areas: 
+        "imgindices"  
+        "tittxtindices"
+        "imgprod"
+        "tittxtproductividad"
+        "imghoras" 
+        "tittxthoras"
+        "btnservicio"
+        ;
+    }
+
+    .main__TituloIndices{
+        font-size: 15px;
+        padding-left: 15px;
+    }
+
+    .main__TextoIndices{
+        font-size: 13px;
+        height: auto;
+        width: 80%;
+        padding-left: 15px;
+    }
+
+    .main__TituloHoras{
+        font-size: 15px;
+        padding-left: 15px;
+    }
+
+    .main__TextoHoras{
+        font-size: 13px;
+        height: auto;
+        width: 80%;
+        padding-left: 15px;
+    }
+
+    .main__TituloProductividad{
+        font-size: 15px;
+        padding-left: 15px;
+    }
+
+    .main__TextoProductividad{
+        font-size: 13px;
+        height: auto;
+        width: 80%;
+        padding-left: 15px;
+    }
+
+    .bar-graph-vertical{
+        margin-left: 20px;
+    }
+
+    .bannerFondoEmpresa {
+        height: 200px;
+    }
+
+    .gridClientes h4 {
+        font-size: 25px;
+    }
+
+    .gridContacto_Botones{
+        margin-left: 40px;
+    }
+
+    .gridServicios{
+        width: 100%;
+        grid-row-gap: 10px;
+    }
+
+    .gridServicios__ParrafoIndice{
+        padding-left: 40px;
+        padding-top: 30px;
+    }
+
+    .gridServicios__ParrafoProd{
+        padding-left: 40px;
+        padding-top: 30px;
+    }
+
+    .gridServicios__ParrafoAnalisis{
+        padding-left: 40px;
+        padding-top: 30px;
+    }
+
+    .bar-graph-vertical{
+        margin-top: 50px;
+    }
+
+    .main__TxtImgOrdenIndices{
+        margin-left: 15%;
+        margin-bottom: 50px;
+    }
+
+    .main__TxtImgOrdenHoras{
+        margin-left: 15%;
+        margin-bottom: 10px;
+    }
+
+    .main__TitTxtProductividad{
+        margin-left: 15%;
+        margin-bottom: 50px;
+    }
+
+    .main__TextoProductividad{
+        padding-left: 0px;
+    }
+
+    .main__TituloProductividad{
+        padding-left: 0px;
+    }
+
+}
+
+.gridContacto iframe{
+    width: 100%;
+}
+
+.contactoImagen{
+    height: 120px;
+}
+
+.contactoH2{
+    margin-top: 70px;
+}
+
+.gridClientes h4{
+    font-size: 20px;
+}
+}
+
+@media (max-width: 360px){
+
+    .banner__Fondo h2{
+        font-size: 18px;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+    
+    .bannerServicios{
+        height: 120px;
+    }
+
+}
