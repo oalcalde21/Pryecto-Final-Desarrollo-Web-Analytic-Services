@@ -46,3 +46,14 @@ $paleta:(
     .bg-fondoLinkedin{
         background-color:map-get($map:$paleta, $key:'nueve')
     }
+
+    //Fin de Map
+
+    //Mixin
+
+    @mixin gridServiciosT(){
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+        margin-right: 20px;
+    }

@@ -77,9 +77,9 @@
     }
 
     &__FotoYTexto1{
+        @extend .girdClientesFYT;
         grid-area: foto1;
         margin-top: 50px;
-        text-align: center;
     }
 
     &__ImagenesRedondas{
@@ -92,63 +92,48 @@
     }
 
     &__Texto1{
+        @include gridServiciosT();
         grid-area: texto1;
-        margin-top: 20px;
-        text-align: center;
-        justify-content: center;
-        margin-right: 20px;
     }
 
     &__FotoYTexto2{
+        @extend .girdClientesFYT;
         grid-area: foto2;
-        text-align: center;
     }
 
     &__Texto2{
+        @include gridServiciosT();
         grid-area: texto2;
-        margin-top: 20px;
-        text-align: center;
-        justify-content: center;
-        margin-right: 20px;
     }
 
     &__FotoYTexto3{
+        @extend .girdClientesFYT;
         grid-area: foto3;
-        text-align: center;
     }
 
     &__Texto3{
+        @include gridServiciosT();
         grid-area: texto3;
-        margin-top: 20px;
-        text-align: center;
-        justify-content: center;
-        margin-right: 20px;
     }
 
     &__FotoYTexto4{
+        @extend .girdClientesFYT;
         grid-area: foto4;
-        text-align: center;
     }
 
     &__Texto4{
+        @include gridServiciosT();
         grid-area: texto4;
-        margin-top: 20px;
-        text-align: center;
-        justify-content: center;
-        margin-right: 20px;
     }
 
     &__FotoYTexto5{
+        @extend .girdClientesFYT;
         grid-area: foto5;
-        text-align: center;
     }
 
     &__Texto5{
+        @include gridServiciosT();
         grid-area: texto5;
-        margin-top: 20px;
-        text-align: center;
-        justify-content: center;
-        margin-right: 20px;
     }
 
     &__Boton{
