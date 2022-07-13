@@ -10,6 +10,42 @@ body {
   font-family: "Roboto";
 }
 
+.bg-gradienteIndex {
+  background-color: linear-gradient(rgb(25, 25, 65), rgb(0, 0, 0));
+}
+
+.bg-fondoAzul {
+  background-color: #030335;
+}
+
+.bg-fondoBlanco {
+  background-color: #ffffff;
+}
+
+.bg-fondoBotonHover {
+  background-color: #3a3881;
+}
+
+.bg-fondoFacebook {
+  background-color: #3b5999;
+}
+
+.bg-fondoTwitter {
+  background-color: #55acee;
+}
+
+.bg-fondoInstagram {
+  background-color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.bg-fondoYoutube {
+  background-color: #cd201f;
+}
+
+.bg-fondoLinkedin {
+  background-color: #0077B5;
+}
+
 .barraMenu {
   color: rgb(8, 0, 51);
   background-color: rgb(255, 255, 255); /*Color de fondo*/
@@ -84,7 +120,7 @@ nav div {
 }
 .footer .footer__iconos {
   color: rgb(8, 0, 51);
-  background-color: rgb(9, 11, 49); /*Color de fondo*/
+  background-color: #030335; /*Color de fondo*/
   width: 50px; /*Tamaño del cuadro contenedor*/
   height: 50px;
   display: flex;
@@ -127,7 +163,7 @@ footer div {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: white;
+  background-color: #ffffff;
   text-align: center;
   transition: 0.5s;
   transform: translate(0, 0px);
@@ -718,47 +754,38 @@ footer div {
   justify-items: center;
   grid-template-areas: "titulo titulo" "indice videoindice" "prod videoprod" "analisis videoanalisis";
 }
-
 .gridServicios iframe {
   width: 450px;
   height: 250px;
 }
-
 .gridServicios__Titulo {
   grid-area: titulo;
   font-size: 30px;
   padding-top: 30px;
 }
-
-.gridServicios__Subitulos {
+.gridServicios__Subtitulos {
   margin-bottom: 10px;
 }
-
 .gridServicios__ParrafoIndice {
   grid-area: indice;
   margin-right: 20px;
 }
-
 .gridServicios__VideoIndice {
   grid-area: videoindice;
   margin-top: 30px;
 }
-
 .gridServicios__ParrafoProd {
   grid-area: prod;
   margin-right: 20px;
 }
-
 .gridServicios__VideoProd {
   grid-area: videoprod;
   margin-top: 30px;
 }
-
 .gridServicios__ParrafoAnalisis {
   grid-area: analisis;
   margin-right: 20px;
 }
-
 .gridServicios__VideoAnalisis {
   grid-area: videoanalisis;
   margin-top: 30px;
@@ -778,7 +805,6 @@ footer div {
   justify-items: center;
   grid-template-areas: "titulo titulo" "imagenes imagenes" "subtit subtit" "foto1 texto1" "foto2 texto2" "foto3 texto3" "foto4 texto4" "foto5 texto5" "boton boton";
 }
-
 .gridClientes__Titulo {
   grid-area: titulo;
   background-color: #030335;
@@ -788,7 +814,6 @@ footer div {
   padding-top: 40px;
   font-size: 30px;
 }
-
 .gridClientes__Marcas {
   grid-area: imagenes;
   background-color: #030335;
@@ -798,7 +823,6 @@ footer div {
   justify-content: center;
   align-items: center;
 }
-
 .gridClientes__Imagenes {
   border-radius: 50%;
   background-color: #030335;
@@ -811,7 +835,6 @@ footer div {
   border-width: 8px;
   border-style: solid;
 }
-
 .gridClientes__Imagenes-Apple {
   border-radius: 50%;
   background-color: #030335;
@@ -825,7 +848,6 @@ footer div {
   border-style: solid;
   margin-left: 60px;
 }
-
 .gridClientes__SubTitulo {
   grid-area: subtit;
   width: 100%;
@@ -833,22 +855,18 @@ footer div {
   padding-top: 40px;
   font-size: 30px;
 }
-
 .gridClientes__FotoYTexto1 {
   grid-area: foto1;
   margin-top: 50px;
   text-align: center;
 }
-
-.gridClientes__ImagensRedondas {
+.gridClientes__ImagenesRedondas {
   border-radius: 50%;
 }
-
 .gridClientes__EspacioIMGTXT {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-
 .gridClientes__Texto1 {
   grid-area: texto1;
   margin-top: 20px;
@@ -856,12 +874,10 @@ footer div {
   justify-content: center;
   margin-right: 20px;
 }
-
 .gridClientes__FotoYTexto2 {
   grid-area: foto2;
   text-align: center;
 }
-
 .gridClientes__Texto2 {
   grid-area: texto2;
   margin-top: 20px;
@@ -869,12 +885,10 @@ footer div {
   justify-content: center;
   margin-right: 20px;
 }
-
 .gridClientes__FotoYTexto3 {
   grid-area: foto3;
   text-align: center;
 }
-
 .gridClientes__Texto3 {
   grid-area: texto3;
   margin-top: 20px;
@@ -882,12 +896,10 @@ footer div {
   justify-content: center;
   margin-right: 20px;
 }
-
 .gridClientes__FotoYTexto4 {
   grid-area: foto4;
   text-align: center;
 }
-
 .gridClientes__Texto4 {
   grid-area: texto4;
   margin-top: 20px;
@@ -895,12 +907,10 @@ footer div {
   justify-content: center;
   margin-right: 20px;
 }
-
 .gridClientes__FotoYTexto5 {
   grid-area: foto5;
   text-align: center;
 }
-
 .gridClientes__Texto5 {
   grid-area: texto5;
   margin-top: 20px;
@@ -908,11 +918,9 @@ footer div {
   justify-content: center;
   margin-right: 20px;
 }
-
 .gridClientes__Boton {
   grid-area: boton;
 }
-
 .gridClientes button {
   text-align: center;
   position: relative;
@@ -926,7 +934,6 @@ footer div {
   box-shadow: -2px -2px 6px 0 rgba(255, 255, 255, 0.2), 2px 2px 6px 0 rgba(61, 59, 59, 0.8);
   margin-top: 100px;
 }
-
 .gridClientes button:hover {
   transition: 1s;
   box-shadow: inset -2px -2px 6px 0 rgba(255, 255, 255, 0.2), inset 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
@@ -961,104 +968,43 @@ footer div {
   justify-items: center;
   grid-template-areas: "mapa form";
 }
-
 .gridContacto__Mapa {
   grid-area: mapa;
   margin-top: 50px;
 }
-
 .gridContacto iframe {
   width: 100%;
   height: 500px;
 }
-
 .gridContacto__Form {
   grid-area: form;
   transform: translateY(-50);
 }
-
 .gridContacto__Titulo {
   padding-bottom: 30px;
   font-size: 20px;
 }
-
 .gridContacto__Labels {
   padding-bottom: 5px;
   font-size: 16px;
 }
-
-/* Elimina las flechas del campo telefono */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
 .gridContacto__Input {
   height: 25px;
   width: 300px;
 }
-
 .gridContacto__Suscribirse {
   padding-top: 20px;
   padding-bottom: 5px;
   font-size: 16px;
   font-weight: bold;
 }
-
-.gridContacto_Checkbox {
+.gridContacto__Checkbox {
   padding-top: 10px;
 }
-
-/* Boton checkbox con slide */
-.toggle {
-  --width: 50px;
-  --height: calc(var(--width) / 2);
-  --border-radius: calc(var(--height) / 2);
-  display: inline-block;
-  cursor: pointer;
-}
-
-.toggle__input {
-  display: none;
-}
-
-.toggle__fill {
-  position: relative;
-  width: var(--width);
-  height: var(--height);
-  border-radius: var(--border-radius);
-  background: #dddddd;
-  transition: background 0.2s;
-}
-
-.toggle__input:checked ~ .toggle__fill {
-  background: linear-gradient(90deg, rgb(89, 207, 56) 0%, rgb(27, 224, 27) 4%, rgb(136, 219, 112) 71%);
-}
-
-.toggle__fill::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: var(--height);
-  width: var(--height);
-  background: #ffffff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  border-radius: var(--border-radius);
-  transition: transform 0.2s;
-}
-
-.toggle__input:checked ~ .toggle__fill::after {
-  transform: translateX(var(--height));
-}
-
-/* Fin boton Checkbox */
-.gridContacto_Botones {
+.gridContacto__Botones {
   padding-top: 20px;
   margin-left: 50px;
 }
-
 .gridContacto button {
   text-align: center;
   position: relative;
@@ -1072,14 +1018,59 @@ input::-webkit-inner-spin-button {
   box-shadow: -2px -2px 6px 0 rgba(255, 255, 255, 0.2), 2px 2px 6px 0 rgba(61, 59, 59, 0.8);
   margin-right: 20px;
 }
-
-.girdContacto button:hover {
+.gridContacto button:hover {
   transition: 1s;
   box-shadow: inset -2px -2px 6px 0 rgba(255, 255, 255, 0.2), inset 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
   background-color: #3a3881;
   color: #ffffff;
 }
 
+/* Elimina las flechas del campo telefono */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Boton checkbox con slide */
+.toggle {
+  --width: 50px;
+  --height: calc(var(--width) / 2);
+  --border-radius: calc(var(--height) / 2);
+  display: inline-block;
+  cursor: pointer;
+}
+.toggle__input {
+  display: none;
+}
+.toggle__fill {
+  position: relative;
+  width: var(--width);
+  height: var(--height);
+  border-radius: var(--border-radius);
+  background: #dddddd;
+  transition: background 0.2s;
+}
+.toggle__input:checked ~ .toggle__fill {
+  background: linear-gradient(90deg, rgb(89, 207, 56) 0%, rgb(27, 224, 27) 4%, rgb(136, 219, 112) 71%);
+}
+.toggle__fill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--height);
+  width: var(--height);
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: var(--border-radius);
+  transition: transform 0.2s;
+}
+.toggle__input:checked ~ .toggle__fill::after {
+  transform: translateX(var(--height));
+}
+
+/* Fin boton Checkbox */
 /* FIN CSS Contacto */
 /* Responsive */
 @media (max-width: 1240px) {

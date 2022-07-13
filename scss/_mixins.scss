@@ -1,0 +1,48 @@
+//maps
+$paleta:(
+	'uno': linear-gradient(rgb(25, 25, 65), rgb(0, 0, 0)), //Gradiente Index
+    'dos': #030335, //Fondo botones
+    'tres':#ffffff, //Fondo Blanco
+    'cuatro':#3a3881,// Fondo Boton Hover
+    'cinco': #3b5999, //fondo icono de Facebook
+    'seis': #55acee, //Fondo icono Twitter
+    'siete':radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%), //Fondo Instagram
+    'ocho': #cd201f, //Fondo icono Youtube
+    'nueve':#0077B5, //Fondo icono Linkedin
+	);
+
+    .bg-gradienteIndex{
+        background-color: map-get($map:$paleta, $key:'uno');
+    }
+
+    .bg-fondoAzul{
+        background-color:map-get($map:$paleta, $key:'dos')
+    }
+
+    .bg-fondoBlanco{
+        background-color:map-get($map:$paleta, $key:'tres')
+    }
+
+    .bg-fondoBotonHover{
+        background-color:map-get($map:$paleta, $key:'cuatro')
+    }
+
+    .bg-fondoFacebook{
+        background-color:map-get($map:$paleta, $key:'cinco')
+    }
+
+    .bg-fondoTwitter{
+        background-color:map-get($map:$paleta, $key:'seis')
+    }
+
+    .bg-fondoInstagram{
+        background-color:map-get($map:$paleta, $key:'siete')
+    }
+
+    .bg-fondoYoutube{
+        background-color:map-get($map:$paleta, $key:'ocho')
+    }
+
+    .bg-fondoLinkedin{
+        background-color:map-get($map:$paleta, $key:'nueve')
+    }

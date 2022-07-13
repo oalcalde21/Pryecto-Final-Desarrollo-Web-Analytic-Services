@@ -4,7 +4,7 @@
     /* max-width: 1200px; */
     height: 100px;
     justify-content: space-between;
-    background-image: linear-gradient(rgb(25, 25, 65), rgb(0, 0, 0));;
+    background-image: map-get($map:$paleta, $key:'uno');
     margin-top: 50px;
 
     .footerDiv{
@@ -18,8 +18,8 @@
 
         button{
         text-align: center;
-        background: #030335;
-        color: #ffffff;
+        background: map-get($map:$paleta, $key:'dos');
+        color: map-get($map:$paleta, $key:'tres');
         border-radius: 25px;
         width: 100px;
         height: 40px;
@@ -32,14 +32,14 @@
             transition: 1s;
         box-shadow: inset -2px -2px 6px 0 rgba(255, 255, 255, 0.2), inset 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
         background-color: #3a3881;
-        color: #ffffff;
+        color:map-get($map:$paleta, $key:'tres');
         }
     }
     }
 
     .footer__iconos{
         color: rgb(8, 0, 51);
-        background-color: rgb(9, 11, 49); /*Color de fondo*/
+        background-color:map-get($map:$paleta, $key:'dos'); /*Color de fondo*/
         width: 50px; /*Tamaño del cuadro contenedor*/
         height: 50px;
         display: flex;
@@ -83,7 +83,7 @@ footer{
                 transition: .5s;
                 
                 &:hover{
-                    color: #ffffff;
+                    color: map-get($map:$paleta, $key:'tres');
                 }
             }
 
@@ -93,7 +93,7 @@ footer{
                 width: 50px;
                 height: 50px;
                 border-radius: 50%;
-                background-color: white;
+                background-color: map-get($map:$paleta, $key:'tres');
                 text-align: center;
                 transition: 0.5s;
                 transform: translate(0,0px);
@@ -106,27 +106,27 @@ footer{
 
             &:nth-child(1){
                 a:hover{
-                    background-color: #3b5999;
+                    background-color:map-get($map:$paleta, $key:'cinco');
                 }
             }
             &:nth-child(2){
                 a:hover{
-                    background-color: #55acee;
+                    background-color: map-get($map:$paleta, $key:'seis');
                 }
             }
             &:nth-child(3){
                 a:hover{
-                    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+                    background: map-get($map:$paleta, $key:'siete');
                 }
             }
             &:nth-child(4){
                 a:hover{
-                    background-color: #cd201f;
+                    background-color:map-get($map:$paleta, $key:'ocho');
                 }
             }
             &:nth-child(5){
                 a:hover{
-                    background-color: #0077B5;
+                    background-color: map-get($map:$paleta, $key:'nueve');
                 }
             }
         }

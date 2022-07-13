@@ -19,53 +19,55 @@
     "titulo titulo"
     "indice videoindice"
     "prod videoprod"
-    "analisis videoanalisis"
+    "analisis videoanalisis";
+
+    & iframe{
+        width: 450px;
+        height: 250px;
+    }
+
+    &__Titulo{
+        grid-area: titulo;
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    &__Subtitulos{
+        margin-bottom: 10px;
+    }
+
+    &__ParrafoIndice{
+        grid-area: indice;
+        margin-right: 20px;
+    }
+
+    &__VideoIndice{
+        grid-area: videoindice;
+        margin-top: 30px;
+    }
+
+    &__ParrafoProd{
+        grid-area: prod;
+        margin-right: 20px;
+    }
+
+    &__VideoProd{
+        grid-area: videoprod;
+        margin-top: 30px;
+    }
+
+    &__ParrafoAnalisis{
+        grid-area: analisis;
+        margin-right: 20px;
+    }
+
+    &__VideoAnalisis{
+        grid-area: videoanalisis;
+        margin-top: 30px;
+    }
+
 }
 
-.gridServicios iframe{
-    width: 450px;
-    height: 250px;
-}
-
-.gridServicios__Titulo {
-    grid-area: titulo;
-    font-size: 30px;
-    padding-top: 30px;
-}
-
-.gridServicios__Subitulos{
-    margin-bottom: 10px;
-}
-
-.gridServicios__ParrafoIndice {
-    grid-area: indice;
-    margin-right: 20px;
-}
-
-.gridServicios__VideoIndice {
-    grid-area: videoindice;
-    margin-top: 30px;
-}
-
-.gridServicios__ParrafoProd {
-    grid-area: prod;
-    margin-right: 20px;
-}
-
-.gridServicios__VideoProd {
-    grid-area: videoprod;
-    margin-top: 30px;
-}
-
-.gridServicios__ParrafoAnalisis {
-    grid-area: analisis;
-    margin-right: 20px;
-}
-
-.gridServicios__VideoAnalisis {
-    grid-area: videoanalisis;
-    margin-top: 30px;
-}
 
 
 /* Fin CSS Servicios */
