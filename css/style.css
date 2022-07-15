@@ -314,12 +314,12 @@ footer div {
 }
 
 /* Texto en el banner */
-.banner__alinearH2 {
+.banner__alinearH1 {
   grid-area: 2/1/-2/6;
   align-self: center;
 }
 
-.banner__Fondo h2 {
+.banner__Fondo h1 {
   text-align: center;
   padding-top: 20px;
   color: white;
@@ -791,7 +791,6 @@ footer div {
 }
 .gridNosotros .tituloNosotros {
   grid-area: titulo;
-  font-size: 200%;
   font-family: "Roboto", sans-serif;
   font-size: 57px;
   padding-top: 40px;
@@ -899,7 +898,7 @@ footer div {
   width: 100%;
   text-align: center;
   padding-top: 40px;
-  font-size: 30px;
+  font-size: 24px;
 }
 .gridClientes__Marcas {
   grid-area: imagenes;
@@ -940,7 +939,7 @@ footer div {
   width: 100%;
   text-align: center;
   padding-top: 40px;
-  font-size: 30px;
+  font-size: 18px;
 }
 .gridClientes__FotoYTexto1 {
   grid-area: foto1;
@@ -1025,7 +1024,7 @@ footer div {
 
 /* Fin CSS Clientes */
 /* CSS Contacto */
-.contactoH2 {
+.contactoH1 {
   color: white;
   position: absolute;
   margin-top: 300px;
