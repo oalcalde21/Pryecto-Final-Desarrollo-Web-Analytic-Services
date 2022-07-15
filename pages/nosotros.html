@@ -18,24 +18,22 @@
     <link href="https://fonts.googleapis.com/css2?family=RRoboto:wght@700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="barraMenu">
-            <div class="barraMenu_Flex">
-                <a href="/index.html"><img src="../assets/images/AS Letras Azules.png" width="150px" alt="Logo principal de la pagina"></a> <!--Carga el logo inicial-->
-            <!--Carga titulo de menu y los 5 botones-->
-                <!-- <h1>Analitics Services</h1> -->
-            </div>
-            <!-- Imagen y Titulo en un DIV y los botones en un segundo DIV para poder implementar el SpaceBetween -->
-            <div class="barraMenu:Flex">
-                    <ul>
-                        <li><a href="../index.html"> Inicio</a></li>
-                        <li><a href="../pages/nosotros.html">Sobre Nosotros</a></li>
-                        <li><a href="../pages/servicios.html">Servicios</a></li>
-                        <li><a href="../pages/clientes.html"> Clientes</a></li>
-                        <li><a href="../pages/contacto.html">Contacto</a></li>
-                    </ul>
-            </div>
-        </nav>
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/images/AS Letras Azules.png" alt="Logo principal de la pagina"></a>
+        </div>
+
+        <div class="navigation">
+            <input type="checkbox" class="toggle-menu">
+            <div class="hamburguer"></div>
+            <ul class="menu">
+                    <li><a href="../index.html"> Inicio</a></li>
+                    <li><a href="../pages/nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="../pages/servicios.html">Servicios</a></li>
+                    <li><a href="../pages/clientes.html"> Clientes</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+        </div>        
     </header>
 
     
