@@ -1,6 +1,6 @@
 /*Configuracion de Banner con imagenes*/
 .banner__Fondo {
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(1, 1, 72)); /*Color de fondo*/
+    background-color: map-get($map:$paleta, $key:'dos'); /*Color de fondo*/
     width: auto; /*Tamaño del cuadro contenedor*/
     /* max-width: 1200px; */
     height: 350px;
@@ -53,27 +53,6 @@
     grid-area: 3 / 1 / -1 / 6 ;
     align-self: center;
 }
-
-.banner__Fondo button {
-    text-align: center;
-    background: #ffffff;
-    border-radius: 25px;
-    width: 100px;
-    height: 30px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    box-shadow: -2px -2px 6px 0 rgba(255, 255, 255, 0.2), 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
-}
-.banner__Fondo button:hover {  
-    transition: 1s;
-    box-shadow: inset -2px -2px 6px 0 rgba(255, 255, 255, 0.2), inset 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
-}
-
-
-
 /*Seccion Media de la pagina*/
 
 .main__Fondo {
@@ -310,7 +289,7 @@
 	width: 170px;
 	background-color: #fff;
 	border-radius: 100%;
-	border: 10px solid #1c7395;
+	border: 10px solid #08407f;
     margin-top: 20px;
 }
 
@@ -463,23 +442,24 @@
 .main button{
     text-align: center;
     position: relative;
-    background: #030335;
+    background: rgb(0, 82, 204);
     color: #ffffff;
-    border-radius: 25px;
-    width: 100px;
+    border-radius: 3px;
+    border: 1px solid #0052cc;
+    border-color: rgb(0, 82, 204);
+    width: 120px;
     height: 40px;
+    font-size: 14px;
     border: none;
     cursor: pointer;
     outline: none;
-    box-shadow: -2px -2px 6px 0 rgba(255, 255, 255, 0.2), 2px 2px 6px 0 rgba(61, 59, 59, 0.8);
 }
 
 
 
 .main button:hover {  
-    transition: 1s;
-    box-shadow: inset -2px -2px 6px 0 rgba(255, 255, 255, 0.2), inset 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
-    background-color: #3a3881;
+    transition: all 1s;
+    background-color:#023888;
     color: #ffffff;
 }
 
