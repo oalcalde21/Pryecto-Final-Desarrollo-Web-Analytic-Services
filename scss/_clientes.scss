@@ -1,162 +1,493 @@
 /* CSS Clientes */
 
+.titulo{
+    background-color: #030335;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 24px;
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+
+.slider{
+    height: 100px;
+    margin: auto;
+    overflow:hidden;
+    position: relative;
+    width: auto;
+    background-color: #030335;
+    padding-bottom: 50px;
+}
+
+.slider .slider-track{
+        animation: scroll 40s linear infinite;
+        display: flex;
+        width: calc(250px * 14);
+}
+
+.slider .slide {
+        height: 100px;
+        width: 150px;
+        
+        & img {
+            border-radius: 100%;
+        }
+}
+
+// Card1
+.card{
+    grid-area: card1;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    color: #ffffff;
+    background: url(../assets/images/cliente1.jpg) center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+
+    &__Content{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        background-color: rgb(6, 24, 52);
+        border-top-left-radius: 20px;
+        transform: translateY(70px);
+        transition: transform .25s;
+    
+        &::before {
+            content: '';
+            position: absolute;
+            top: -47px;
+            right: -35px;
+            width: 85px;
+            height: 120px;
+            transform: rotate(-120deg);
+            border-radius: 100%;
+            box-shadow: inset 48px 48px rgb(6, 24, 52);
+        }
+    }
+
+    &__Title{
+        color: #ffffff;
+        line-height: 15px;
+    }
+
+    &__Subtitle{
+        display: block;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    &__Description{
+        font-size: 14px;
+        opacity: 0;
+        transition: opacity .5s;
+        width: 90%;
+    }
+}
+
+.card:hover .card__Content{
+    transform: translateY(0);
+}
+
+.card:hover .card__Description{
+    opacity: 1;
+    transition-delay: .25s;
+}
+
+// Fin Card 1
+
+// Card2
+.card2{
+    grid-area: card2;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    color: #ffffff;
+    background: url(../assets/images/cliente2.jpg) center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+
+    &__Content{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        background-color: rgb(6, 24, 52);
+        border-top-left-radius: 20px;
+        transform: translateY(70px);
+        transition: transform .25s;
+    
+        &::before {
+            content: '';
+            position: absolute;
+            top: -47px;
+            right: -35px;
+            width: 85px;
+            height: 120px;
+            transform: rotate(-120deg);
+            border-radius: 100%;
+            box-shadow: inset 48px 48px rgb(6, 24, 52);
+        }
+    }
+
+    &__Title{
+        color: #ffffff;
+        line-height: 15px;
+    }
+
+    &__Subtitle{
+        display: block;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    &__Description{
+        font-size: 14px;
+        opacity: 0;
+        transition: opacity .5s;
+        width: 90%;
+    }
+}
+
+.card2:hover .card__Content{
+    transform: translateY(0);
+}
+
+.card2:hover .card__Description{
+    opacity: 1;
+    transition-delay: .25s;
+}
+
+// Fin Card 2
+
+// Card 3
+.card3{
+    grid-area: card3;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    color: #ffffff;
+    background: url(../assets/images/cliente3.jpg) center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+
+    &__Content{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        background-color: rgb(6, 24, 52);
+        border-top-left-radius: 20px;
+        transform: translateY(70px);
+        transition: transform .25s;
+    
+        &::before {
+            content: '';
+            position: absolute;
+            top: -47px;
+            right: -35px;
+            width: 85px;
+            height: 120px;
+            transform: rotate(-120deg);
+            border-radius: 100%;
+            box-shadow: inset 48px 48px rgb(6, 24, 52);
+        }
+    }
+
+    &__Title{
+        color: #ffffff;
+        line-height: 15px;
+    }
+
+    &__Subtitle{
+        display: block;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    &__Description{
+        font-size: 14px;
+        opacity: 0;
+        transition: opacity .5s;
+        width: 90%;
+    }
+}
+
+.card3:hover .card__Content{
+    transform: translateY(0);
+}
+
+.card3:hover .card__Description{
+    opacity: 1;
+    transition-delay: .25s;
+}
+
+// Fin Card 3
+
+// Card 4
+
+.card4 {
+    grid-area: card4;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    color: #ffffff;
+    background: url(../assets/images/cliente4.jpg) center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 40px;
+
+    &__Content{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        background-color: rgb(6, 24, 52);
+        border-top-left-radius: 20px;
+        transform: translateY(70px);
+        transition: transform .25s;
+    
+        &::before {
+            content: '';
+            position: absolute;
+            top: -47px;
+            right: -35px;
+            width: 85px;
+            height: 120px;
+            transform: rotate(-120deg);
+            border-radius: 100%;
+            box-shadow: inset 48px 48px rgb(6, 24, 52);
+        }
+    }
+
+    &__Title{
+        color: #ffffff;
+        line-height: 15px;
+    }
+
+    &__Subtitle{
+        display: block;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    &__Description{
+        font-size: 14px;
+        opacity: 0;
+        transition: opacity .5s;
+        width: 90%;
+    }
+}
+
+.card4:hover .card__Content{
+    transform: translateY(0);
+}
+
+.card4:hover .card__Description{
+    opacity: 1;
+    transition-delay: .25s;
+}
+
+// Fin Card 4
+
+// Card 5
+
+.card5 {
+    grid-area: card5;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    color: #ffffff;
+    background: url(../assets/images/cliente5.jpg) center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 40px;
+
+    &__Content{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        background-color: rgb(6, 24, 52);
+        border-top-left-radius: 20px;
+        transform: translateY(70px);
+        transition: transform .25s;
+    
+        &::before {
+            content: '';
+            position: absolute;
+            top: -47px;
+            right: -35px;
+            width: 85px;
+            height: 120px;
+            transform: rotate(-120deg);
+            border-radius: 100%;
+            box-shadow: inset 48px 48px rgb(6, 24, 52);
+        }
+    }
+
+    &__Title{
+        color: #ffffff;
+        line-height: 15px;
+    }
+
+    &__Subtitle{
+        display: block;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    &__Description{
+        font-size: 14px;
+        opacity: 0;
+        transition: opacity .5s;
+        width: 90%;
+    }
+}
+
+.card5:hover .card__Content{
+    transform: translateY(0);
+}
+
+.card5:hover .card__Description{
+    opacity: 1;
+    transition-delay: .25s;
+}
+
+// Fin Card 5
+
+// Card 6
+
+.card6 {
+    grid-area: card6;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    color: #ffffff;
+    background: url(../assets/images/cliente6.jpg) center no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 40px;
+
+    &__Content{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        background-color: rgb(6, 24, 52);
+        border-top-left-radius: 20px;
+        transform: translateY(70px);
+        transition: transform .25s;
+    
+        &::before {
+            content: '';
+            position: absolute;
+            top: -47px;
+            right: -35px;
+            width: 85px;
+            height: 120px;
+            transform: rotate(-120deg);
+            border-radius: 100%;
+            box-shadow: inset 48px 48px rgb(6, 24, 52);
+        }
+    }
+
+    &__Title{
+        color: #ffffff;
+        line-height: 15px;
+    }
+
+    &__Subtitle{
+        display: block;
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    &__Description{
+        font-size: 14px;
+        opacity: 0;
+        transition: opacity .5s;
+        width: 90%;
+    }
+}
+
+.card6:hover .card__Content{
+    transform: translateY(0);
+}
+
+.card6:hover .card__Description{
+    opacity: 1;
+    transition-delay: .25s;
+}
+
+// Fin Card 6
+
+
+
 .gridClientes {
     margin: auto;
     background-color: rgb(255, 255, 255); /*Color de fondo*/
-    width: 100%; /*Tamaño del cuadro contenedor*/
+    width: 70%; /*Tamaño del cuadro contenedor*/
     height: auto;
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(9, auto);
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(4, auto);
     align-items: center;
     justify-items: center;
     grid-template-areas: 
-    "titulo titulo"
-    "imagenes imagenes"
-    "subtit subtit"
-    "foto1 texto1"
-    "foto2 texto2"
-    "foto3 texto3"
-    "foto4 texto4"
-    "foto5 texto5"
-    "boton boton";
-
-    &__Titulo{
-        grid-area: titulo;
-        background-color: #030335;
-        color: white;
-        width: 100%;
-        text-align: center;
-        padding-top: 40px;
-        font-size: 24px;
-    }
-
-    &__Marcas{
-        grid-area: imagenes;
-        background-color: #030335;
-        color: white;
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &__Imagenes{
-        border-radius: 50%;
-        background-color: #030335;
-        width: 150px;
-        height: 150px;
-        margin-top: 50px;
-        margin-bottom: 30px;
-        margin-right: 50px;
-        border: white;
-        border-width: 8px;
-        border-style: solid;
-    }
-
-    &__Imagenes-Apple{
-        border-radius: 50%;
-        background-color: #030335;
-        width: 150px;
-        height: 150px;
-        margin-top: 50px;
-        margin-bottom: 30px;
-        margin-right: 50px;
-        border: white;
-        border-width: 8px;
-        border-style: solid;
-        margin-left: 60px;
-    }
+    "subtit subtit subtit"
+    "card1 card2 card3"
+    "card4 card5 card6"
+    "boton boton boton";
 
     &__SubTitulo{
         grid-area: subtit;
         width: 100%;
         text-align: center;
         padding-top: 40px;
-        font-size: 18px;
-    }
-
-    &__FotoYTexto1{
-        @extend .girdClientesFYT;
-        grid-area: foto1;
-        margin-top: 50px;
-    }
-
-    &__ImagenesRedondas{
-        border-radius: 50%;
-    }
-
-    &__EspacioIMGTXT{
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-
-    &__Texto1{
-        @include gridServiciosT();
-        grid-area: texto1;
-    }
-
-    &__FotoYTexto2{
-        @extend .girdClientesFYT;
-        grid-area: foto2;
-    }
-
-    &__Texto2{
-        @include gridServiciosT();
-        grid-area: texto2;
-    }
-
-    &__FotoYTexto3{
-        @extend .girdClientesFYT;
-        grid-area: foto3;
-    }
-
-    &__Texto3{
-        @include gridServiciosT();
-        grid-area: texto3;
-    }
-
-    &__FotoYTexto4{
-        @extend .girdClientesFYT;
-        grid-area: foto4;
-    }
-
-    &__Texto4{
-        @include gridServiciosT();
-        grid-area: texto4;
-    }
-
-    &__FotoYTexto5{
-        @extend .girdClientesFYT;
-        grid-area: foto5;
-    }
-
-    &__Texto5{
-        @include gridServiciosT();
-        grid-area: texto5;
+        font-size: 15px;
+        margin-bottom: 50px
     }
 
     &__Boton{
         grid-area: boton;
+        margin-top: 40px;
     }
 
     & button {
         text-align: center;
         position: relative;
-        background: #030335;
+        background: rgb(0, 82, 204);
         color: #ffffff;
-        width: 100px;
+        border-radius: 3px;
+        border: 1px solid #0052cc;
+        border-color: rgb(0, 82, 204);
+        width: 120px;
         height: 40px;
+        font-size: 14px;
         border: none;
         cursor: pointer;
         outline: none;
-        box-shadow: -2px -2px 6px 0 rgba(255, 255, 255, 0.2), 2px 2px 6px 0 rgba(61, 59, 59, 0.8);
-        margin-top: 100px;
 
         &:hover{
-            transition: 1s;
-            box-shadow: inset -2px -2px 6px 0 rgba(255, 255, 255, 0.2), inset 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
-            background-color: #3a3881;
+            transition: all 1s;
+            background-color:#023888;
             color: #ffffff;
         }
     }

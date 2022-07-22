@@ -37,24 +37,28 @@
 
     .botonNosotros{
         text-align: center;
-        background: #030335;
+        position: relative;
+        background: rgb(0, 82, 204);
         color: #ffffff;
-        border-radius: 25px;
-        width: 100px;
+        border-radius: 3px;
+        border: 1px solid #0052cc;
+        border-color: rgb(0, 82, 204);
+        width: 120px;
         height: 40px;
+        font-size: 14px;
         border: none;
         cursor: pointer;
         outline: none;
-        box-shadow: -2px -2px 6px 0 rgba(255, 255, 255, 0.2), 2px 2px 6px 0 rgba(61, 59, 59, 0.8);
-        grid-area: boton;
-        margin-top: 40px;
 
-        &:hover {
-            transition: 1s;
-            box-shadow: inset -2px -2px 6px 0 rgba(255, 255, 255, 0.2), inset 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
-            background-color: #3a3881;
+        &:hover {  
+            transition: all 1s;
+            background-color:#023888;
             color: #ffffff;
         }
     }
+    
+    
+    
+    
 }
 

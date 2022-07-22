@@ -103,6 +103,7 @@
     grid-area: tittxtindices;
 }
 
+
 /* Bar Graph Vertical */
 .bar-graph .year {
     -webkit-animation: fade-in-text 2.2s 0.1s infinite alternate;
@@ -453,14 +454,12 @@
     border: none;
     cursor: pointer;
     outline: none;
-}
 
-
-
-.main button:hover {  
-    transition: all 1s;
-    background-color:#023888;
-    color: #ffffff;
+    &  button:hover {  
+        transition: all 1s;
+        background-color:#023888;
+        color: #ffffff;
+    }
 }
 
 .mainOrden{

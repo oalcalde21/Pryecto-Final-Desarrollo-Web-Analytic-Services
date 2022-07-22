@@ -46,7 +46,7 @@ body {
   background-color: #0077B5;
 }
 
-.girdClientesFYT, .gridClientes__FotoYTexto5, .gridClientes__FotoYTexto4, .gridClientes__FotoYTexto3, .gridClientes__FotoYTexto2, .gridClientes__FotoYTexto1 {
+.girdClientesFYT {
   text-align: center;
 }
 
@@ -223,7 +223,7 @@ body {
 .footer .footerOrden {
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 95%;
   margin: auto;
 }
 
@@ -729,8 +729,7 @@ footer div {
   cursor: pointer;
   outline: none;
 }
-
-.main button:hover {
+.main button button:hover {
   transition: all 1s;
   background-color: #023888;
   color: #ffffff;
@@ -790,22 +789,22 @@ footer div {
 }
 .gridNosotros .botonNosotros {
   text-align: center;
-  background: #030335;
+  position: relative;
+  background: rgb(0, 82, 204);
   color: #ffffff;
-  border-radius: 25px;
-  width: 100px;
+  border-radius: 3px;
+  border: 1px solid #0052cc;
+  border-color: rgb(0, 82, 204);
+  width: 120px;
   height: 40px;
+  font-size: 14px;
   border: none;
   cursor: pointer;
   outline: none;
-  box-shadow: -2px -2px 6px 0 rgba(255, 255, 255, 0.2), 2px 2px 6px 0 rgba(61, 59, 59, 0.8);
-  grid-area: boton;
-  margin-top: 40px;
 }
 .gridNosotros .botonNosotros:hover {
-  transition: 1s;
-  box-shadow: inset -2px -2px 6px 0 rgba(255, 255, 255, 0.2), inset 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
-  background-color: #3a3881;
+  transition: all 1s;
+  background-color: #023888;
   color: #ffffff;
 }
 
@@ -866,146 +865,434 @@ footer div {
 
 /* Fin CSS Servicios */
 /* CSS Clientes */
-.gridClientes {
-  margin: auto;
-  background-color: rgb(255, 255, 255); /*Color de fondo*/
-  width: 100%; /*Tamaño del cuadro contenedor*/
-  height: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(9, auto);
-  align-items: center;
-  justify-items: center;
-  grid-template-areas: "titulo titulo" "imagenes imagenes" "subtit subtit" "foto1 texto1" "foto2 texto2" "foto3 texto3" "foto4 texto4" "foto5 texto5" "boton boton";
-}
-.gridClientes__Titulo {
-  grid-area: titulo;
+.titulo {
   background-color: #030335;
   color: white;
   width: 100%;
   text-align: center;
   padding-top: 40px;
   font-size: 24px;
+  padding-bottom: 30px;
+  font-size: 16px;
 }
-.gridClientes__Marcas {
-  grid-area: imagenes;
+
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
   background-color: #030335;
-  color: white;
+  padding-bottom: 50px;
+}
+
+.slider .slider-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: 3500px;
+}
+
+.slider .slide {
+  height: 100px;
+  width: 150px;
+}
+.slider .slide img {
+  border-radius: 100%;
+}
+
+.card {
+  grid-area: card1;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  color: #ffffff;
+  background: url(../assets/images/cliente1.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card__Content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  text-align: center;
-  justify-content: center;
+  padding: 20px;
+  background-color: rgb(6, 24, 52);
+  border-top-left-radius: 20px;
+  transform: translateY(70px);
+  transition: transform 0.25s;
+}
+.card__Content::before {
+  content: "";
+  position: absolute;
+  top: -47px;
+  right: -35px;
+  width: 85px;
+  height: 120px;
+  transform: rotate(-120deg);
+  border-radius: 100%;
+  box-shadow: inset 48px 48px rgb(6, 24, 52);
+}
+.card__Title {
+  color: #ffffff;
+  line-height: 15px;
+}
+.card__Subtitle {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.card__Description {
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  width: 90%;
+}
+
+.card:hover .card__Content {
+  transform: translateY(0);
+}
+
+.card:hover .card__Description {
+  opacity: 1;
+  transition-delay: 0.25s;
+}
+
+.card2 {
+  grid-area: card2;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  color: #ffffff;
+  background: url(../assets/images/cliente2.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card2__Content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(6, 24, 52);
+  border-top-left-radius: 20px;
+  transform: translateY(70px);
+  transition: transform 0.25s;
+}
+.card2__Content::before {
+  content: "";
+  position: absolute;
+  top: -47px;
+  right: -35px;
+  width: 85px;
+  height: 120px;
+  transform: rotate(-120deg);
+  border-radius: 100%;
+  box-shadow: inset 48px 48px rgb(6, 24, 52);
+}
+.card2__Title {
+  color: #ffffff;
+  line-height: 15px;
+}
+.card2__Subtitle {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.card2__Description {
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  width: 90%;
+}
+
+.card2:hover .card__Content {
+  transform: translateY(0);
+}
+
+.card2:hover .card__Description {
+  opacity: 1;
+  transition-delay: 0.25s;
+}
+
+.card3 {
+  grid-area: card3;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  color: #ffffff;
+  background: url(../assets/images/cliente3.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.card3__Content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(6, 24, 52);
+  border-top-left-radius: 20px;
+  transform: translateY(70px);
+  transition: transform 0.25s;
+}
+.card3__Content::before {
+  content: "";
+  position: absolute;
+  top: -47px;
+  right: -35px;
+  width: 85px;
+  height: 120px;
+  transform: rotate(-120deg);
+  border-radius: 100%;
+  box-shadow: inset 48px 48px rgb(6, 24, 52);
+}
+.card3__Title {
+  color: #ffffff;
+  line-height: 15px;
+}
+.card3__Subtitle {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.card3__Description {
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  width: 90%;
+}
+
+.card3:hover .card__Content {
+  transform: translateY(0);
+}
+
+.card3:hover .card__Description {
+  opacity: 1;
+  transition-delay: 0.25s;
+}
+
+.card4 {
+  grid-area: card4;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  color: #ffffff;
+  background: url(../assets/images/cliente4.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 40px;
+}
+.card4__Content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(6, 24, 52);
+  border-top-left-radius: 20px;
+  transform: translateY(70px);
+  transition: transform 0.25s;
+}
+.card4__Content::before {
+  content: "";
+  position: absolute;
+  top: -47px;
+  right: -35px;
+  width: 85px;
+  height: 120px;
+  transform: rotate(-120deg);
+  border-radius: 100%;
+  box-shadow: inset 48px 48px rgb(6, 24, 52);
+}
+.card4__Title {
+  color: #ffffff;
+  line-height: 15px;
+}
+.card4__Subtitle {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.card4__Description {
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  width: 90%;
+}
+
+.card4:hover .card__Content {
+  transform: translateY(0);
+}
+
+.card4:hover .card__Description {
+  opacity: 1;
+  transition-delay: 0.25s;
+}
+
+.card5 {
+  grid-area: card5;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  color: #ffffff;
+  background: url(../assets/images/cliente5.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 40px;
+}
+.card5__Content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(6, 24, 52);
+  border-top-left-radius: 20px;
+  transform: translateY(70px);
+  transition: transform 0.25s;
+}
+.card5__Content::before {
+  content: "";
+  position: absolute;
+  top: -47px;
+  right: -35px;
+  width: 85px;
+  height: 120px;
+  transform: rotate(-120deg);
+  border-radius: 100%;
+  box-shadow: inset 48px 48px rgb(6, 24, 52);
+}
+.card5__Title {
+  color: #ffffff;
+  line-height: 15px;
+}
+.card5__Subtitle {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.card5__Description {
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  width: 90%;
+}
+
+.card5:hover .card__Content {
+  transform: translateY(0);
+}
+
+.card5:hover .card__Description {
+  opacity: 1;
+  transition-delay: 0.25s;
+}
+
+.card6 {
+  grid-area: card6;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  color: #ffffff;
+  background: url(../assets/images/cliente6.jpg) center no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 40px;
+}
+.card6__Content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(6, 24, 52);
+  border-top-left-radius: 20px;
+  transform: translateY(70px);
+  transition: transform 0.25s;
+}
+.card6__Content::before {
+  content: "";
+  position: absolute;
+  top: -47px;
+  right: -35px;
+  width: 85px;
+  height: 120px;
+  transform: rotate(-120deg);
+  border-radius: 100%;
+  box-shadow: inset 48px 48px rgb(6, 24, 52);
+}
+.card6__Title {
+  color: #ffffff;
+  line-height: 15px;
+}
+.card6__Subtitle {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.card6__Description {
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  width: 90%;
+}
+
+.card6:hover .card__Content {
+  transform: translateY(0);
+}
+
+.card6:hover .card__Description {
+  opacity: 1;
+  transition-delay: 0.25s;
+}
+
+.gridClientes {
+  margin: auto;
+  background-color: rgb(255, 255, 255); /*Color de fondo*/
+  width: 70%; /*Tamaño del cuadro contenedor*/
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(4, auto);
   align-items: center;
-}
-.gridClientes__Imagenes {
-  border-radius: 50%;
-  background-color: #030335;
-  width: 150px;
-  height: 150px;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  margin-right: 50px;
-  border: white;
-  border-width: 8px;
-  border-style: solid;
-}
-.gridClientes__Imagenes-Apple {
-  border-radius: 50%;
-  background-color: #030335;
-  width: 150px;
-  height: 150px;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  margin-right: 50px;
-  border: white;
-  border-width: 8px;
-  border-style: solid;
-  margin-left: 60px;
+  justify-items: center;
+  grid-template-areas: "subtit subtit subtit" "card1 card2 card3" "card4 card5 card6" "boton boton boton";
 }
 .gridClientes__SubTitulo {
   grid-area: subtit;
   width: 100%;
   text-align: center;
   padding-top: 40px;
-  font-size: 18px;
-}
-.gridClientes__FotoYTexto1 {
-  grid-area: foto1;
-  margin-top: 50px;
-}
-.gridClientes__ImagenesRedondas {
-  border-radius: 50%;
-}
-.gridClientes__EspacioIMGTXT {
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-.gridClientes__Texto1 {
-  margin-top: 20px;
-  text-align: center;
-  justify-content: center;
-  margin-right: 20px;
-  grid-area: texto1;
-}
-.gridClientes__FotoYTexto2 {
-  grid-area: foto2;
-}
-.gridClientes__Texto2 {
-  margin-top: 20px;
-  text-align: center;
-  justify-content: center;
-  margin-right: 20px;
-  grid-area: texto2;
-}
-.gridClientes__FotoYTexto3 {
-  grid-area: foto3;
-}
-.gridClientes__Texto3 {
-  margin-top: 20px;
-  text-align: center;
-  justify-content: center;
-  margin-right: 20px;
-  grid-area: texto3;
-}
-.gridClientes__FotoYTexto4 {
-  grid-area: foto4;
-}
-.gridClientes__Texto4 {
-  margin-top: 20px;
-  text-align: center;
-  justify-content: center;
-  margin-right: 20px;
-  grid-area: texto4;
-}
-.gridClientes__FotoYTexto5 {
-  grid-area: foto5;
-}
-.gridClientes__Texto5 {
-  margin-top: 20px;
-  text-align: center;
-  justify-content: center;
-  margin-right: 20px;
-  grid-area: texto5;
+  font-size: 15px;
+  margin-bottom: 50px;
 }
 .gridClientes__Boton {
   grid-area: boton;
+  margin-top: 40px;
 }
 .gridClientes button {
   text-align: center;
   position: relative;
-  background: #030335;
+  background: rgb(0, 82, 204);
   color: #ffffff;
-  width: 100px;
+  border-radius: 3px;
+  border: 1px solid #0052cc;
+  border-color: rgb(0, 82, 204);
+  width: 120px;
   height: 40px;
+  font-size: 14px;
   border: none;
   cursor: pointer;
   outline: none;
-  box-shadow: -2px -2px 6px 0 rgba(255, 255, 255, 0.2), 2px 2px 6px 0 rgba(61, 59, 59, 0.8);
-  margin-top: 100px;
 }
 .gridClientes button:hover {
-  transition: 1s;
-  box-shadow: inset -2px -2px 6px 0 rgba(255, 255, 255, 0.2), inset 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
-  background-color: #3a3881;
+  transition: all 1s;
+  background-color: #023888;
   color: #ffffff;
 }
 
@@ -1149,6 +1436,12 @@ input::-webkit-inner-spin-button {
   .footerOrden {
     width: 98%;
   }
+  .gridNosotros .bannerFondoEmpresa {
+    height: 500px;
+  }
+  .bannerServicios {
+    height: 450px;
+  }
 }
 @media (max-width: 1024px) {
   .barraMenu {
@@ -1171,7 +1464,10 @@ input::-webkit-inner-spin-button {
     margin-left: 150px;
   }
   .gridNosotros .bannerFondoEmpresa {
-    height: 500px;
+    height: 400px;
+  }
+  .bannerServicios {
+    height: 400px;
   }
 }
 @media (max-width: 920px) {
@@ -1201,6 +1497,9 @@ input::-webkit-inner-spin-button {
   }
   .header {
     padding: 10px 20px;
+  }
+  .gridNosotros .bannerFondoEmpresa {
+    height: 400px;
   }
   .menu {
     justify-content: start;
@@ -1243,7 +1542,10 @@ input::-webkit-inner-spin-button {
     margin-top: 250px;
   }
   .gridNosotros .bannerFondoEmpresa {
-    height: 500px;
+    height: 300px;
+  }
+  .bannerServicios {
+    height: 350px;
   }
 }
 @media (max-width: 795px) {
@@ -1257,7 +1559,7 @@ input::-webkit-inner-spin-button {
     width: 200px;
   }
   .gridNosotros .bannerFondoEmpresa {
-    height: 500px;
+    height: 300px;
   }
 }
 @media (max-width: 768px) {
@@ -1310,7 +1612,7 @@ input::-webkit-inner-spin-button {
     grid-template-areas: "titulo" "indice" "videoindice" "prod" "videoprod" "analisis" "videoanalisis";
   }
   .gridNosotros .bannerFondoEmpresa {
-    height: 450px;
+    height: 300px;
   }
 }
 @media (max-width: 720px) {
@@ -1326,7 +1628,7 @@ input::-webkit-inner-spin-button {
     grid-row-gap: 20px;
   }
   .gridNosotros .bannerFondoEmpresa {
-    height: 450px;
+    height: 300px;
   }
 }
 @media (max-width: 640px) {
@@ -1433,6 +1735,9 @@ input::-webkit-inner-spin-button {
   .gridServicios__Titulo {
     font-size: 20px;
   }
+  .gridNosotros .bannerFondoEmpresa {
+    height: 300px;
+  }
   .gridClientes {
     margin: auto;
     background-color: rgb(255, 255, 255); /*Color de fondo*/
@@ -1522,6 +1827,9 @@ input::-webkit-inner-spin-button {
     flex-direction: column;
     height: auto;
   }
+  .gridNosotros .bannerFondoEmpresa {
+    height: 200px;
+  }
   .bannerServicios {
     height: 150px;
     grid-row-gap: 5px;
@@ -1572,8 +1880,6 @@ input::-webkit-inner-spin-button {
   .footer {
     height: 150px;
   }
-}
-@media (max-width: 580px) {
   .gridContacto {
     margin: auto;
     background-color: rgb(255, 255, 255); /*Color de fondo*/
@@ -1601,7 +1907,11 @@ input::-webkit-inner-spin-button {
     padding-left: 0px;
   }
   .gridNosotros .bannerFondoEmpresa {
-    height: 300px;
+    height: 250px;
+  }
+  .gridNosotros .tituloNosotros {
+    text-align: 0 auto;
+    font-size: 40px;
   }
 }
 @media (max-width: 440px) {
@@ -1811,5 +2121,13 @@ input::-webkit-inner-spin-button {
   }
 }
 /* Fin Animacion Reloj */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(-1750px);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

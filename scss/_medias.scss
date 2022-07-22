@@ -10,6 +10,13 @@
         width: 98%;
     }
     
+    .gridNosotros .bannerFondoEmpresa {
+        height: 500px;
+    }
+
+    .bannerServicios{
+        height: 450px;
+    }
 
 }
 
@@ -41,7 +48,11 @@
     }
 
     .gridNosotros .bannerFondoEmpresa {
-        height: 500px;
+        height: 400px;
+    }
+
+    .bannerServicios{
+        height: 400px;
     }
 
 }
@@ -82,6 +93,10 @@
 
     .header{
         padding: 10px 20px;
+    }
+
+    .gridNosotros .bannerFondoEmpresa {
+        height: 400px;
     }
 
     .menu{
@@ -142,7 +157,11 @@
     }
 
     .gridNosotros .bannerFondoEmpresa {
-        height: 500px;
+        height: 300px;
+    }
+
+    .bannerServicios{
+        height: 350px;
     }
 }
 
@@ -161,7 +180,7 @@
     }
 
     .gridNosotros .bannerFondoEmpresa {
-        height: 500px;
+        height: 300px;
     }
 }
 
@@ -234,7 +253,7 @@
     }
 
     .gridNosotros .bannerFondoEmpresa {
-        height: 450px;
+        height: 300px;
     }
 }
 
@@ -255,7 +274,7 @@
     }
 
     .gridNosotros .bannerFondoEmpresa {
-        height: 450px;
+        height: 300px;
     }
 }
 
@@ -389,7 +408,10 @@
     .gridServicios__Titulo{
         font-size: 20px;
     }
-
+    
+    .gridNosotros .bannerFondoEmpresa {
+        height: 300px;
+    }
     .gridClientes {
         margin: auto;
         background-color: rgb(255, 255, 255); /*Color de fondo*/
@@ -516,6 +538,10 @@
         height: auto;
     }
 
+    .gridNosotros .bannerFondoEmpresa {
+        height: 200px;
+    }
+
     .bannerServicios{
         height: 150px;
         grid-row-gap: 5px;
@@ -579,46 +605,48 @@
     .footer{
         height: 150px;
     }
-}
-
-@media (max-width: 580px){
 
     .gridContacto{
-    margin: auto;
-    background-color: rgb(255, 255, 255); /*Color de fondo*/
-    width: 100%; /*Tamaño del cuadro contenedor*/
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(1, auto);
-    align-items: center;
-    justify-items: center;
-    column-gap: 0px;
-    grid-template-areas: 
-    "mapa" 
-    "form"
-    }
+        margin: auto;
+        background-color: rgb(255, 255, 255); /*Color de fondo*/
+        width: 100%; /*Tamaño del cuadro contenedor*/
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(1, auto);
+        align-items: center;
+        justify-items: center;
+        column-gap: 0px;
+        grid-template-areas: 
+        "mapa" 
+        "form"
+        }
+    
+        .gridContacto iframe {
+            width: 350px;
+        }
+    
+        .gridClientes__Imagenes{
+            margin-right: 20px;
+        }
+    
+        .gridClientes__Imagenes-Apple{
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    
+        .footer .footerDiv{
+            padding-left: 0px;
+        }
+    
+        .gridNosotros .bannerFondoEmpresa {
+            height: 250px;
+        }
 
-    .gridContacto iframe {
-        width: 350px;
-    }
-
-    .gridClientes__Imagenes{
-        margin-right: 20px;
-    }
-
-    .gridClientes__Imagenes-Apple{
-        margin-right: 20px;
-        margin-left: 20px;
-    }
-
-    .footer .footerDiv{
-        padding-left: 0px;
-    }
-
-    .gridNosotros .bannerFondoEmpresa {
-        height: 300px;
-    }
+        .gridNosotros .tituloNosotros{
+            text-align: 0 auto;
+            font-size: 40px;
+        }
 }
 
 @media (max-width: 440px){
