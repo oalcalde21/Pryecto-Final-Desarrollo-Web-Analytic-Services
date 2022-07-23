@@ -89,13 +89,14 @@
 
 @media (max-width: 920px){
 
-    .gridContacto__Input{
-        width: 200px;
-    }
-
     .gridContacto{
         column-gap: 30px;
+
+        &__Input{
+            width: 200px; 
+        }
     }
+    
 
     .bannerFondoEmpresa{
         height: 550px;
@@ -454,34 +455,34 @@
         "card5"
         "card6"
         "boton";
-    }
 
-    .gridClientes__EspacioIMGTXT{
-        margin-bottom: 0px;
-    }
-
-    .gridClientes__Texto1{
-        margin-bottom: 20px;
-    }
-
-    .gridClientes__Texto2{
-        margin-bottom: 20px;
-    }
-
-    .gridClientes__Texto3{
-        margin-bottom: 20px;
-    }
-
-    .gridClientes__Texto4{
-        margin-bottom: 20px;
-    }
-
-    .gridClientes__Texto5{
-        margin-bottom: 20px;
-    }
-
-    .gridClientes button {
-        margin-top: 40px;
+        &__EspacioIMGTXT{
+            margin-bottom: 0px;
+        }
+    
+        &__Texto1{
+            margin-bottom: 20px;
+        }
+    
+        &__Texto2{
+            margin-bottom: 20px;
+        }
+    
+        &__Texto3{
+            margin-bottom: 20px;
+        }
+    
+        &__Texto4{
+            margin-bottom: 20px;
+        }
+    
+        &__Texto5{
+            margin-bottom: 20px;
+        }
+    
+        & button {
+            margin-top: 40px;
+        }
     }
 
     .contactoH2{

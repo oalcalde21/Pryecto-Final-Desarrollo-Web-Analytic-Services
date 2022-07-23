@@ -210,7 +210,7 @@ body {
   background-color: rgb(0, 82, 204);
   color: #ffffff;
 }
-.footer .footer__iconos {
+.footer__iconos {
   color: rgb(8, 0, 51);
   background-color: #030335; /*Color de fondo*/
   width: 50px; /*Tamaño del cuadro contenedor*/
@@ -281,6 +281,10 @@ footer div {
 }
 
 /*Configuracion de Banner con imagenes*/
+.banner {
+  /* Texto en el banner */
+  /* Configuracion de boton y su comportamiento  */
+}
 .banner__Fondo {
   background-color: #030335; /*Color de fondo*/
   width: auto; /*Tamaño del cuadro contenedor*/
@@ -292,54 +296,54 @@ footer div {
   align-items: center;
   justify-items: center;
 }
-
 .banner__alinearImagenes {
   grid-area: 1/1/-3/6;
   align-self: center;
 }
-
 .banner__Imagen1 {
   width: 250px;
   height: 150px;
   margin-top: 50px;
 }
-
 .banner__Imagen2 {
   width: 250px;
   height: 150px;
   margin-top: 50px;
   margin-left: 10px;
 }
-
 .banner__Imagen3 {
   width: 250px;
   height: 150px;
   margin-top: 50px;
   margin-left: 10px;
 }
-
-/* Texto en el banner */
 .banner__alinearH1 {
   grid-area: 2/1/-2/6;
   align-self: center;
 }
-
 .banner__Fondo h1 {
   text-align: center;
   padding-top: 20px;
-  color: white;
+  color: #fff;
 }
-
-/* Configuracion de boton y su comportamiento  */
 .banner__alinearButton {
   grid-area: 3/1/-1/6;
   align-self: center;
 }
 
 /*Seccion Media de la pagina*/
+.main {
+  /* Bar Graph Vertical */
+  /* Fin de animacion barras */
+  /* Animacion Grafica Circular */
+  /* Circle Chart */
+  /* Fin animacion grafica circular */
+  /* Reloj */
+  /* Fin Reloj */
+}
 .main__Fondo {
   margin: auto;
-  background-color: rgb(255, 255, 255); /*Color de fondo*/
+  background-color: #fff; /*Color de fondo*/
   width: auto; /*Tamaño del cuadro contenedor*/
   max-width: 1200px;
   height: auto;
@@ -350,7 +354,6 @@ footer div {
   justify-items: center;
   grid-template-areas: "imgindices imgindices tittxtindices tittxtindices tittxtindices" "imgindices imgindices tittxtindices tittxtindices tittxtindices" ". . . . ." "tittxtproductividad tittxtproductividad tittxtproductividad imgprod imgprod" "tittxtproductividad tittxtproductividad tittxtproductividad imgprod imgprod" ". . . . ." "imghoras imghoras tittxthoras tittxthoras tittxthoras" "imghoras imghoras tittxthoras tittxthoras tittxthoras" "btnservicio btnservicio btnservicio btnservicio btnservicio";
 }
-
 .main__TituloIndices {
   justify-self: flex-start;
   text-align: left;
@@ -361,7 +364,6 @@ footer div {
   /* max-width: 1200px; */
   /* grid-area: tittxtindices */
 }
-
 .main__TextoIndices {
   height: 40px;
   width: auto;
@@ -370,25 +372,20 @@ footer div {
   text-align: left;
   width: 80%;
 }
-
 .main__TxtImgOrdenIndices {
   grid-area: tittxtindices;
 }
-
-/* Bar Graph Vertical */
-.bar-graph .year {
+.main .bar-graph .year {
   -webkit-animation: fade-in-text 2.2s 0.1s infinite alternate;
   -moz-animation: fade-in-text 2.2s 0.1s infinite alternate;
   animation: fade-in-text 2.2s 0.1s infinite alternate;
 }
-
-.bar-graph-vertical {
+.main .bar-graph-vertical {
   margin-top: 80px;
   max-width: 680px;
   grid-area: imgindices;
 }
-
-.bar-graph-vertical .bar-container {
+.main .bar-graph-vertical .bar-container {
   float: left;
   height: 150px;
   margin-right: 8px;
@@ -396,15 +393,13 @@ footer div {
   text-align: center;
   width: 40px;
 }
-
-.bar-graph-vertical .bar {
+.main .bar-graph-vertical .bar {
   border-radius: 3px;
   bottom: 40px;
   position: absolute;
   width: 40px;
 }
-
-.bar-graph-vertical .year {
+.main .bar-graph-vertical .year {
   bottom: 0;
   left: 0;
   margin: 0 auto;
@@ -416,8 +411,7 @@ footer div {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-
-.bar-graph-two .bar::after {
+.main .bar-graph-two .bar::after {
   -webkit-animation: fade-in-text 2.2s 0.1s forwards;
   -moz-animation: fade-in-text 2.2s 0.1s forwards;
   animation: fade-in-text 2.2s 0.1s forwards;
@@ -436,39 +430,31 @@ footer div {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-
-.bar-graph-two .bar-one .bar {
+.main .bar-graph-two .bar-one .bar {
   background-color: #64b2d1;
   -webkit-animation: show-bar-one-vertical 2s 0.1s infinite alternate;
   animation: show-bar-one-vertical 2s 0.1s infinite alternate;
   -moz-animation: show-bar-one-vertical 2s 0.1s infinite alternate;
 }
-
-.bar-graph-two .bar-two .bar {
+.main .bar-graph-two .bar-two .bar {
   background-color: #64b2d1;
   -webkit-animation: show-bar-two-vertical 2s 0.1s infinite alternate;
   animation: show-bar-two-vertical 2s 0.1s infinite alternate;
   -moz-animation: show-bar-two-vertical 2s 0.1s infinite alternate;
 }
-
-.bar-graph-two .bar-three .bar {
+.main .bar-graph-two .bar-three .bar {
   background-color: #64b2d1;
   -webkit-animation: show-bar-three-vertical 2s 0.1s infinite alternate;
   animation: show-bar-three-vertical 2s 0.1s infinite alternate;
   -moz-animation: show-bar-three-vertical 2s 0.1s infinite alternate;
 }
-
-.bar-graph-two .bar-four .bar {
+.main .bar-graph-two .bar-four .bar {
   background-color: #64b2d1;
   -webkit-animation: show-bar-four-vertical 2s 0.1s infinite alternate;
   animation: show-bar-four-vertical 2s 0.1s infinite alternate;
   -moz-animation: show-bar-four-vertical 2s 0.1s infinite alternate;
 }
-
-/* Fin de animacion barras */
-/* Animacion Grafica Circular */
-/* Circle Chart */
-.circle-chart-container {
+.main .circle-chart-container {
   clear: left;
   float: left;
   position: relative;
@@ -476,12 +462,10 @@ footer div {
   width: 100%;
   grid-area: imgprod;
 }
-
-.circle-chart {
+.main .circle-chart {
   overflow: visible;
 }
-
-.circle-chart-circle {
+.main .circle-chart-circle {
   animation: circle-chart-fill 3s infinite alternate;
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
@@ -490,22 +474,19 @@ footer div {
   transform: rotate(-90deg);
   transform-origin: center;
 }
-
-.circle-chart-two {
+.main .circle-chart-two {
   left: 6%;
   max-width: 88%;
   position: absolute;
   top: 6%;
 }
-
-.circle-chart-three {
+.main .circle-chart-three {
   left: 12%;
   max-width: 75%;
   position: absolute;
   top: 12%;
 }
-
-.circle-chart-percentage {
+.main .circle-chart-percentage {
   -webkit-animation: fade-in-text 2.2s 0.1s forwards;
   -moz-animation: fade-in-text 2.2s 0.1s forwards;
   animation: fade-in-text 2.2s 0.1s forwards;
@@ -513,26 +494,21 @@ footer div {
   font-weight: 700;
   position: absolute;
 }
-
-.circle-chart-one-percentage {
+.main .circle-chart-one-percentage {
   color: #64B2D1;
   left: 65px;
   top: 40px;
 }
-
-.circle-chart-two-percentage {
+.main .circle-chart-two-percentage {
   color: #5292AC;
   left: 40px;
   top: 70px;
 }
-
-.circle-chart-three-percentage {
+.main .circle-chart-three-percentage {
   color: #061246;
   left: 70px;
   top: 100px;
 }
-
-/* Fin animacion grafica circular */
 .main__TituloProductividad {
   /* grid-area: titprod ; */
   justify-self: left;
@@ -542,15 +518,12 @@ footer div {
   width: 90%;
   /* max-width: 1200px; */
 }
-
 .main__TitTxtProductividad {
   grid-area: tittxtproductividad;
   text-align: left;
   width: 80%;
 }
-
-/* Reloj */
-.clock {
+.main .clock {
   grid-area: imghoras;
   position: relative;
   height: 170px;
@@ -560,8 +533,7 @@ footer div {
   border: 10px solid #08407f;
   margin-top: 20px;
 }
-
-.clock .top {
+.main .clock .top {
   position: absolute;
   width: 3px;
   height: 8px;
@@ -570,8 +542,7 @@ footer div {
   right: 0;
   margin: 0 auto;
 }
-
-.clock .right {
+.main .clock .right {
   position: absolute;
   width: 8px;
   height: 3px;
@@ -581,8 +552,7 @@ footer div {
   right: 0;
   margin: auto;
 }
-
-.clock .bottom {
+.main .clock .bottom {
   position: absolute;
   width: 3px;
   height: 8px;
@@ -592,8 +562,7 @@ footer div {
   bottom: 0;
   margin: 0 auto;
 }
-
-.clock .left {
+.main .clock .left {
   position: absolute;
   width: 8px;
   height: 3px;
@@ -603,8 +572,7 @@ footer div {
   bottom: 0;
   margin: auto;
 }
-
-.clock .center {
+.main .clock .center {
   height: 6px;
   width: 6px;
   background-color: #262626;
@@ -616,8 +584,7 @@ footer div {
   bottom: 0;
   margin: auto;
 }
-
-.clock .shadow {
+.main .clock .shadow {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
   height: 170px;
   width: 170px;
@@ -625,8 +592,7 @@ footer div {
   border-radius: 100%;
   transform: rotate(360deg);
 }
-
-.clock .hour {
+.main .clock .hour {
   width: 3px;
   height: 100%;
   position: absolute;
@@ -635,8 +601,7 @@ footer div {
   margin: 0 auto;
   animation: time 3600s infinite linear;
 }
-
-.clock .hour:before {
+.main .clock .hour:before {
   content: "";
   height: 60px;
   width: 3px;
@@ -644,8 +609,7 @@ footer div {
   position: absolute;
   top: 30px;
 }
-
-.clock .minute {
+.main .clock .minute {
   width: 1px;
   height: 100%;
   position: absolute;
@@ -654,8 +618,7 @@ footer div {
   margin: 0 auto;
   animation: time 360s infinite linear;
 }
-
-.clock .minute:before {
+.main .clock .minute:before {
   position: absolute;
   content: "";
   background-color: #262626;
@@ -663,8 +626,7 @@ footer div {
   width: 1px;
   top: 50px;
 }
-
-.clock .second {
+.main .clock .second {
   width: 2px;
   height: 100%;
   position: absolute;
@@ -673,8 +635,7 @@ footer div {
   margin: 0 auto;
   animation: time 15s infinite linear;
 }
-
-.clock .second:before {
+.main .clock .second:before {
   position: absolute;
   content: "";
   background-color: #fd1111;
@@ -682,8 +643,6 @@ footer div {
   width: 2px;
   top: 45px;
 }
-
-/* Fin Reloj */
 .main__TituloHoras {
   /* grid-area: tithoras ; */
   justify-self: left;
@@ -693,19 +652,16 @@ footer div {
   width: 90%;
   /* max-width: 1200px; */
 }
-
 .main__TextoHoras {
   /* grid-area: txthoras ; */
   justify-self: left;
   text-align: left;
 }
-
 .main__TxtImgOrdenHoras {
   grid-area: tittxthoras;
   width: 80%;
   margin: auto;
 }
-
 .main__DivBotonServicio {
   width: auto;
   /* max-width: 1200px; */
@@ -713,15 +669,14 @@ footer div {
   align-self: center;
   margin-top: 60px;
 }
-
 .main button {
   text-align: center;
   position: relative;
-  background: rgb(0, 82, 204);
-  color: #ffffff;
+  background: #0052cc;
+  color: #fff;
   border-radius: 3px;
   border: 1px solid #0052cc;
-  border-color: rgb(0, 82, 204);
+  border-color: #0052cc;
   width: 120px;
   height: 40px;
   font-size: 14px;
@@ -729,18 +684,16 @@ footer div {
   cursor: pointer;
   outline: none;
 }
-.main button button:hover {
+.main button:hover {
   transition: all 1s;
   background-color: #023888;
-  color: #ffffff;
+  color: #fff;
 }
-
-.mainOrden {
+.main .mainOrden {
   text-align: left;
   width: auto;
   /* max-width: 1200px; */
 }
-
 .main__TituloIndicesReverse {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -750,8 +703,7 @@ footer div {
   width: 100%;
   /* max-width: 1200px; */
 }
-
-.mainOrdenInvertido {
+.main .mainOrdenInvertido {
   display: flex;
   flex-direction: row-reverse;
   padding-right: 20px;
@@ -790,11 +742,11 @@ footer div {
 .gridNosotros .botonNosotros {
   text-align: center;
   position: relative;
-  background: rgb(0, 82, 204);
-  color: #ffffff;
+  background: #0052cc;
+  color: #fff;
   border-radius: 3px;
   border: 1px solid #0052cc;
-  border-color: rgb(0, 82, 204);
+  border-color: #0052cc;
   width: 120px;
   height: 40px;
   font-size: 14px;
@@ -806,7 +758,7 @@ footer div {
 .gridNosotros .botonNosotros:hover {
   transition: all 1s;
   background-color: #023888;
-  color: #ffffff;
+  color: #fff;
 }
 
 /* CSS  Servicios*/
@@ -817,7 +769,7 @@ footer div {
 
 .gridServicios {
   margin: auto;
-  background-color: rgb(255, 255, 255); /*Color de fondo*/
+  background-color: #fff; /*Color de fondo*/
   width: 70%; /*Tamaño del cuadro contenedor*/
   height: auto;
   display: grid;
@@ -868,7 +820,7 @@ footer div {
 /* CSS Clientes */
 .titulo {
   background-color: #030335;
-  color: white;
+  color: #fff;
   width: 100%;
   text-align: center;
   padding-top: 40px;
@@ -906,7 +858,7 @@ footer div {
   position: relative;
   width: 250px;
   height: 250px;
-  color: #ffffff;
+  color: #fff;
   background: url(../assets/images/cliente1.jpg) center no-repeat;
   background-size: cover;
   border-radius: 20px;
@@ -918,7 +870,7 @@ footer div {
   bottom: 0;
   width: 100%;
   padding: 20px;
-  background-color: rgb(6, 24, 52);
+  background-color: #030335;
   border-top-left-radius: 20px;
   transform: translateY(70px);
   transition: transform 0.25s;
@@ -932,10 +884,10 @@ footer div {
   height: 120px;
   transform: rotate(-120deg);
   border-radius: 100%;
-  box-shadow: inset 48px 48px rgb(6, 24, 52);
+  box-shadow: inset 48px 48px #030335;
 }
 .card__Title {
-  color: #ffffff;
+  color: #fff;
   line-height: 15px;
 }
 .card__Subtitle {
@@ -964,7 +916,7 @@ footer div {
   position: relative;
   width: 250px;
   height: 250px;
-  color: #ffffff;
+  color: #fff;
   background: url(../assets/images/cliente2.jpg) center no-repeat;
   background-size: cover;
   border-radius: 20px;
@@ -985,7 +937,7 @@ footer div {
   position: relative;
   width: 250px;
   height: 250px;
-  color: #ffffff;
+  color: #fff;
   background: url(../assets/images/cliente3.jpg) center no-repeat;
   background-size: cover;
   border-radius: 20px;
@@ -1006,7 +958,7 @@ footer div {
   position: relative;
   width: 250px;
   height: 250px;
-  color: #ffffff;
+  color: #fff;
   background: url(../assets/images/cliente4.jpg) center no-repeat;
   background-size: cover;
   border-radius: 20px;
@@ -1028,7 +980,7 @@ footer div {
   position: relative;
   width: 250px;
   height: 250px;
-  color: #ffffff;
+  color: #fff;
   background: url(../assets/images/cliente5.jpg) center no-repeat;
   background-size: cover;
   border-radius: 20px;
@@ -1050,7 +1002,7 @@ footer div {
   position: relative;
   width: 250px;
   height: 250px;
-  color: #ffffff;
+  color: #fff;
   background: url(../assets/images/cliente6.jpg) center no-repeat;
   background-size: cover;
   border-radius: 20px;
@@ -1069,7 +1021,7 @@ footer div {
 
 .gridClientes {
   margin: auto;
-  background-color: rgb(255, 255, 255); /*Color de fondo*/
+  background-color: #fff; /*Color de fondo*/
   width: 70%; /*Tamaño del cuadro contenedor*/
   height: auto;
   display: grid;
@@ -1094,11 +1046,11 @@ footer div {
 .gridClientes button {
   text-align: center;
   position: relative;
-  background: rgb(0, 82, 204);
+  background: #0052cc;
   color: #ffffff;
   border-radius: 3px;
   border: 1px solid #0052cc;
-  border-color: rgb(0, 82, 204);
+  border-color: #0052cc;
   width: 120px;
   height: 40px;
   font-size: 14px;
@@ -1109,13 +1061,13 @@ footer div {
 .gridClientes button:hover {
   transition: all 1s;
   background-color: #023888;
-  color: #ffffff;
+  color: #fff;
 }
 
 /* Fin CSS Clientes */
 /* CSS Contacto */
 .contactoH1 {
-  color: white;
+  color: #fff;
   position: absolute;
   margin-top: 300px;
   margin-left: 23%;
@@ -1129,7 +1081,7 @@ footer div {
 
 .gridContacto {
   margin: auto;
-  background-color: rgb(255, 255, 255); /*Color de fondo*/
+  background-color: #fff; /*Color de fondo*/
   width: 70%; /*Tamaño del cuadro contenedor*/
   height: auto;
   display: grid;
@@ -1181,11 +1133,11 @@ footer div {
 .gridContacto button {
   text-align: center;
   position: relative;
-  background: rgb(0, 82, 204);
-  color: #ffffff;
+  background: #0052cc;
+  color: #fff;
   border-radius: 3px;
   border: 1px solid #0052cc;
-  border-color: rgb(0, 82, 204);
+  border-color: #0052cc;
   width: 120px;
   height: 40px;
   margin-top: 20px;
@@ -1198,7 +1150,7 @@ footer div {
 .gridContacto button:hover {
   transition: all 1s;
   background-color: #023888;
-  color: #ffffff;
+  color: #fff;
 }
 
 /* Elimina las flechas del campo telefono */
@@ -1237,7 +1189,7 @@ input::-webkit-inner-spin-button {
   left: 0;
   height: var(--height);
   width: var(--height);
-  background: #ffffff;
+  background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   border-radius: var(--border-radius);
   transition: transform 0.2s;
@@ -1313,11 +1265,11 @@ input::-webkit-inner-spin-button {
   }
 }
 @media (max-width: 920px) {
-  .gridContacto__Input {
-    width: 200px;
-  }
   .gridContacto {
     column-gap: 30px;
+  }
+  .gridContacto__Input {
+    width: 200px;
   }
   .bannerFondoEmpresa {
     height: 550px;

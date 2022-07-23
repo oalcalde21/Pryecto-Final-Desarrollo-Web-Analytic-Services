@@ -1,7 +1,7 @@
 /* CSS Contacto */
 
 .contactoH1{
-    color: white;
+    color: $blanco;
     position: absolute; 
     margin-top: 300px;
     margin-left: 23%;
@@ -15,7 +15,7 @@
 
 .gridContacto {
     margin: auto;
-    background-color: rgb(255, 255, 255); /*Color de fondo*/
+    background-color: $blanco; /*Color de fondo*/
     width: 70%; /*Tamaño del cuadro contenedor*/
     height: auto;
     display: grid;
@@ -77,11 +77,11 @@
     & button {
         text-align: center;
         position: relative;
-        background: rgb(0, 82, 204);
-        color: #ffffff;
+        background: $azulclaro;
+        color: $blanco;
         border-radius: 3px;
-        border: 1px solid #0052cc;
-        border-color: rgb(0, 82, 204);
+        border: 1px solid $azulclaro;
+        border-color: $azulclaro;
         width: 120px;
         height: 40px;
         margin-top: 20px;
@@ -94,8 +94,8 @@
 
         &:hover{
             transition: all 1s;
-            background-color:#023888;
-            color: #ffffff;
+            background-color:$azulclarohover;
+            color: $blanco;
         }
     }
 
@@ -142,7 +142,7 @@ margin: 0;
         left: 0;
         height: var(--height);
         width: var(--height);
-        background: #ffffff;
+        background: $blanco;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
         border-radius: var(--border-radius);
         transition: transform 0.2s;

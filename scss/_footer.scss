@@ -43,7 +43,7 @@
     }
     }
 
-    .footer__iconos{
+    &__iconos{
         color: rgb(8, 0, 51);
         background-color:map-get($map:$paleta, $key:'dos'); /*Color de fondo*/
         width: 50px; /*Tamaño del cuadro contenedor*/

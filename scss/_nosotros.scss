@@ -1,6 +1,6 @@
 .gridNosotros {
     margin: auto;
-    background-color: $FondoGridNosotros; /*Color de fondo*/
+    background-color: $blanco; /*Color de fondo*/
     width: auto; /*Tamaño del cuadro contenedor*/
     height: auto;
     display: grid;
@@ -38,11 +38,11 @@
     .botonNosotros{
         text-align: center;
         position: relative;
-        background: rgb(0, 82, 204);
-        color: #ffffff;
+        background: $azulclaro;
+        color: $blanco;
         border-radius: 3px;
-        border: 1px solid #0052cc;
-        border-color: rgb(0, 82, 204);
+        border: 1px solid $azulclaro;
+        border-color: $azulclaro;
         width: 120px;
         height: 40px;
         font-size: 14px;
@@ -53,8 +53,8 @@
 
         &:hover {  
             transition: all 1s;
-            background-color:#023888;
-            color: #ffffff;
+            background-color:$azulclarohover;
+            color: $blanco;
         }
     }
     
