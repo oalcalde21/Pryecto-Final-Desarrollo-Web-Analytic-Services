@@ -92,14 +92,11 @@
         margin-bottom: 10px;
         font-weight: 900;
         width: 90%;
-        /* max-width: 1200px; */
-        /* grid-area: tittxtindices */
     }
 
     &__TextoIndices {
         height: 40px;
         width: auto;
-        /* grid-area: tittxtindices ; */
         justify-self: left;
         text-align: left;
         width: 80%;
@@ -204,7 +201,6 @@
 
     /* Animacion Grafica Circular */
 
-    /* Circle Chart */
     .circle-chart-container {
         clear: left;
         float: left;
@@ -272,13 +268,11 @@
     /* Fin animacion grafica circular */
 
     &__TituloProductividad {
-        /* grid-area: titprod ; */
         justify-self: left;
         text-align: start;
         margin-bottom: 10px;
         font-weight: 900;
         width: 90%;
-        /* max-width: 1200px; */
     }
 
     &__TitTxtProductividad{
@@ -416,18 +410,15 @@
     /* Fin Reloj */
 
     &__TituloHoras {
-        /* grid-area: tithoras ; */
         justify-self: left;
         text-align: start;
         margin-bottom: 10px;
         font-weight: 900;
         width: 90%;
-        /* max-width: 1200px; */
     }
 
 
     &__TextoHoras {
-        /* grid-area: txthoras ; */
         justify-self: left;
         text-align: left;
     }
@@ -440,7 +431,6 @@
 
     &__DivBotonServicio{
         width: auto;
-        /* max-width: 1200px; */
         grid-area: btnservicio ;
         align-self: center;
         margin-top: 60px;
@@ -471,7 +461,6 @@
     .mainOrden{
         text-align: left;
         width: auto;
-        /* max-width: 1200px; */
     }
 
     &__TituloIndicesReverse {
@@ -481,7 +470,6 @@
         flex-direction: row-reverse;
         font-weight: 900;
         width: 100%;
-        /* max-width: 1200px; */
     }
 
     .mainOrdenInvertido{

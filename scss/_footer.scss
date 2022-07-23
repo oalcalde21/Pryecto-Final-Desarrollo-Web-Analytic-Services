@@ -21,8 +21,8 @@
         background: map-get($map:$paleta, $key:'dos');
         color: map-get($map:$paleta, $key:'tres');
         border-radius: 3px;
-        border: 2px solid white;
-        border-color: white;
+        border: 2px solid $blanco;
+        border-color: $blanco;
         width: 150px;
         height: 50px;
         font-size: 14px;
@@ -37,7 +37,7 @@
     
         &:hover{
             transition: 1s;
-            background-color:  rgb(0, 82, 204);
+            background-color: $azuloscurohover;
             color:map-get($map:$paleta, $key:'tres');
         }
     }
