@@ -69,28 +69,33 @@
 
     &__Botones{
         margin-top: 20px;
-        margin-left: 50px;        
+        display: flex;
+        align-items: center;
+        justify-content: center;   
     }
 
-    & button{
-    margin-top: 20px;
-    text-align: center;
-    position: relative;
-    background: #030335;
-    color: #ffffff;
-    width: 100px;
-    height: 40px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    box-shadow: -2px -2px 6px 0 rgba(255, 255, 255, 0.2), 2px 2px 6px 0 rgba(61, 59, 59, 0.8);
-    margin-right: 20px;
-
-    &:hover {
-        transition: 1s;
-        box-shadow: inset -2px -2px 6px 0 rgba(255, 255, 255, 0.2), inset 2px 2px 6px 0 rgba(0, 0, 0, 0.8);
-        background-color: #3a3881;
+    & button {
+        text-align: center;
+        position: relative;
+        background: rgb(0, 82, 204);
         color: #ffffff;
+        border-radius: 3px;
+        border: 1px solid #0052cc;
+        border-color: rgb(0, 82, 204);
+        width: 120px;
+        height: 40px;
+        margin-top: 20px;
+        font-size: 14px;
+        margin-left: 10px;
+
+        border: none;
+        cursor: pointer;
+        outline: none;
+
+        &:hover{
+            transition: all 1s;
+            background-color:#023888;
+            color: #ffffff;
         }
     }
 

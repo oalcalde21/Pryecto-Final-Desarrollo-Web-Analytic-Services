@@ -18,6 +18,36 @@
         height: 450px;
     }
 
+    .gridClientes {
+        margin: auto;
+        background-color: rgb(255, 255, 255); /*Color de fondo*/
+        width: 70%; /*Tamaño del cuadro contenedor*/
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(5, auto);
+        align-items: center;
+        gap: 40px 0;
+        justify-items: center;
+        grid-template-areas: 
+        "subtit subtit"
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "boton boton";
+    }
+
+    .card6 {
+        margin-top: 0px;
+    }
+
+    .card5 {
+        margin-top: 0px;
+    }
+
+    .card4 {
+        margin-top: 0px;
+    }
 }
 
 @media (max-width: 1024px){
@@ -202,9 +232,12 @@
         margin-top:170px;
     }
 
+    .gridContacto__Botones{
+        width: 80%;
+    }
 
     .gridContacto button{
-        width: 60px;
+        width: 100px;
         height: 30px;  
         font-size: 12px; 
     }
@@ -220,16 +253,6 @@
 
     .gridClientes__Titulo {
         font-size: 20px;
-    }
-
-    .gridClientes__Imagenes {
-        width: 150px;
-        height: 150px;
-    }
-
-    .gridClientes__Imagenes-Apple{
-        width: 150px;
-        height: 150px;
     }
 
     .gridServicios {
@@ -260,15 +283,6 @@
 
 @media (max-width: 720px){
 
-    .gridClientes__Imagenes {
-        width: 100px;
-        height: 100px;
-    }
-
-    .gridClientes__Imagenes-Apple{
-        width: 100px;
-        height: 100px;
-    }
 
     .main__Fondo{
         grid-row-gap: 20px;
@@ -377,9 +391,9 @@
     }
 
     .main button {
-        width: 80px;
-        height: 30px;
-        font-size: 10px;
+        width: 100px;
+        height: 40px;
+        font-size: 14px;
     }
 
     .footer button {
@@ -423,28 +437,23 @@
     .gridClientes {
         margin: auto;
         background-color: rgb(255, 255, 255); /*Color de fondo*/
-        width: 100%; /*Tamaño del cuadro contenedor*/
+        width: 70%; /*Tamaño del cuadro contenedor*/
         height: auto;
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(14, auto);
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(8, auto);
         align-items: center;
         justify-items: center;
+        gap: 30px;
         grid-template-areas: 
-        "titulo"
-        "imagenes"
         "subtit"
-        "foto1" 
-        "texto1"
-        "foto2"
-        "texto2"
-        "foto3" 
-        "texto3"
-        "foto4" 
-        "texto4"
-        "foto5" 
-        "texto5"
-        "boton"
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "boton";
     }
 
     .gridClientes__EspacioIMGTXT{
@@ -501,37 +510,9 @@
     .gridNosotros .bannerFondoEmpresa {
         height: 400px;
     }
-}
 
-@media (max-width: 640px){
-    
     .bannerServicios{
         height: 200px;
-    }
-
-    .gridClientes__Texto1{
-        font-size: 13px;
-        width: 70%;
-    }
-
-    .gridClientes__Texto2{
-        font-size: 13px;
-        width: 70%;
-    }
-
-    .gridClientes__Texto3{
-        font-size: 13px;
-        width: 70%;
-    }
-
-    .gridClientes__Texto4{
-        font-size: 13px;
-        width: 70%;
-    }
-
-    .gridClientes__Texto5{
-        font-size: 13px;
-        width: 70%;
     }
     
     .gridNosotros .bannerFondoEmpresa {
@@ -539,11 +520,176 @@
     }
 }
 
+
 @media (max-width: 580px){
     .barraMenu{
         display: flex;
         flex-direction: column;
         height: auto;
+    }
+    
+    .banner__alinearH1 {
+        grid-area: 2 / 1 / -2 / 6 ;
+        align-self: center;
+        margin-left: 40px;
+        margin-bottom: 30px;
+    }
+
+    .banner__Fondo {
+        background-image: linear-gradient(rgb(0, 0, 0), rgb(1, 1, 72)); /*Color de fondo*/
+        width: auto; /*Tamaño del cuadro contenedor*/
+        height: 350px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        align-items: center;
+        justify-items: center;
+
+        & h1{
+            width: 90%;
+        }
+    }
+
+    .banner__alinearImagenes {
+        grid-area: 1 / 1 / -4 / 6 ;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner__Imagen2{
+        display: none;
+    }
+
+    .banner__Imagen1{
+        margin-top: 20px;
+    }
+
+    .banner__Imagen2{
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    .main__Fondo {
+        margin: auto;
+        background-color: rgb(255, 255, 255); /*Color de fondo*/
+        width: 90%; /*Tamaño del cuadro contenedor*/
+        max-width: 1200px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(7, auto);
+        align-items: center;
+        justify-items: center;
+        grid-template-areas: 
+        "imgindices"  
+        "tittxtindices"
+        "imgprod"
+        "tittxtproductividad"
+        "imghoras" 
+        "tittxthoras"
+        "btnservicio"
+        ;
+    }
+
+    .main__TituloIndices{
+        font-size: 15px;
+        padding-left: 15px;
+    }
+
+    .main__TextoIndices{
+        font-size: 13px;
+        height: auto;
+        width: 80%;
+        padding-left: 15px;
+    }
+
+    .main__TituloHoras{
+        font-size: 15px;
+        padding-left: 15px;
+    }
+
+    .main__TextoHoras{
+        font-size: 13px;
+        height: auto;
+        width: 80%;
+        padding-left: 15px;
+    }
+
+    .main__TituloProductividad{
+        font-size: 15px;
+        padding-left: 15px;
+    }
+
+    .main__TextoProductividad{
+        font-size: 13px;
+        height: auto;
+        width: 80%;
+        padding-left: 15px;
+    }
+
+    .bar-graph-vertical{
+        margin-left: 20px;
+    }
+
+    .bannerFondoEmpresa {
+        height: 200px;
+    }
+
+    .gridClientes h4 {
+        font-size: 25px;
+    }
+
+    .gridContacto__Botones{
+        width: 100%;
+        margin-left: -10px;
+    }
+
+    .gridServicios{
+        width: 100%;
+        grid-row-gap: 10px;
+    }
+
+    .gridServicios__ParrafoIndice{
+        padding-left: 40px;
+        padding-top: 30px;
+    }
+
+    .gridServicios__ParrafoProd{
+        padding-left: 40px;
+        padding-top: 30px;
+    }
+
+    .gridServicios__ParrafoAnalisis{
+        padding-left: 40px;
+        padding-top: 30px;
+    }
+
+    .bar-graph-vertical{
+        margin-top: 50px;
+    }
+
+    .main__TxtImgOrdenIndices{
+        margin-left: 15%;
+        margin-bottom: 50px;
+    }
+
+    .main__TxtImgOrdenHoras{
+        margin-left: 15%;
+        margin-bottom: 10px;
+    }
+
+    .main__TitTxtProductividad{
+        margin-left: 15%;
+        margin-bottom: 50px;
+    }
+
+    .main__TextoProductividad{
+        padding-left: 0px;
+    }
+
+    .main__TituloProductividad{
+        padding-left: 0px;
     }
 
     .gridNosotros .bannerFondoEmpresa {
@@ -659,158 +805,6 @@
 
 @media (max-width: 440px){
 
-    .banner__Fondo {
-        background-image: linear-gradient(rgb(0, 0, 0), rgb(1, 1, 72)); /*Color de fondo*/
-        width: auto; /*Tamaño del cuadro contenedor*/
-        /* max-width: 1200px; */
-        height: 350px;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        align-items: center;
-        justify-items: center;
-    }
-
-    .banner__alinearImagenes {
-        grid-area: 1 / 1 / -4 / 6 ;
-        align-self: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .banner__Imagen2{
-        display: none;
-    }
-
-    .banner__Imagen1{
-        margin-top: 20px;
-    }
-
-    .banner__Imagen2{
-        margin-top: 20px;
-        margin-left: 0px;
-    }
-
-    .main__Fondo {
-        margin: auto;
-        background-color: rgb(255, 255, 255); /*Color de fondo*/
-        width: 90%; /*Tamaño del cuadro contenedor*/
-        max-width: 1200px;
-        height: auto;
-        display: grid;
-        grid-template-columns: repeat(1, 100%);
-        grid-template-rows: repeat(7, auto);
-        align-items: center;
-        justify-items: center;
-        grid-template-areas: 
-        "imgindices"  
-        "tittxtindices"
-        "imgprod"
-        "tittxtproductividad"
-        "imghoras" 
-        "tittxthoras"
-        "btnservicio"
-        ;
-    }
-
-    .main__TituloIndices{
-        font-size: 15px;
-        padding-left: 15px;
-    }
-
-    .main__TextoIndices{
-        font-size: 13px;
-        height: auto;
-        width: 80%;
-        padding-left: 15px;
-    }
-
-    .main__TituloHoras{
-        font-size: 15px;
-        padding-left: 15px;
-    }
-
-    .main__TextoHoras{
-        font-size: 13px;
-        height: auto;
-        width: 80%;
-        padding-left: 15px;
-    }
-
-    .main__TituloProductividad{
-        font-size: 15px;
-        padding-left: 15px;
-    }
-
-    .main__TextoProductividad{
-        font-size: 13px;
-        height: auto;
-        width: 80%;
-        padding-left: 15px;
-    }
-
-    .bar-graph-vertical{
-        margin-left: 20px;
-    }
-
-    .bannerFondoEmpresa {
-        height: 200px;
-    }
-
-    .gridClientes h4 {
-        font-size: 25px;
-    }
-
-    .gridContacto_Botones{
-        margin-left: 40px;
-    }
-
-    .gridServicios{
-        width: 100%;
-        grid-row-gap: 10px;
-    }
-
-    .gridServicios__ParrafoIndice{
-        padding-left: 40px;
-        padding-top: 30px;
-    }
-
-    .gridServicios__ParrafoProd{
-        padding-left: 40px;
-        padding-top: 30px;
-    }
-
-    .gridServicios__ParrafoAnalisis{
-        padding-left: 40px;
-        padding-top: 30px;
-    }
-
-    .bar-graph-vertical{
-        margin-top: 50px;
-    }
-
-    .main__TxtImgOrdenIndices{
-        margin-left: 15%;
-        margin-bottom: 50px;
-    }
-
-    .main__TxtImgOrdenHoras{
-        margin-left: 15%;
-        margin-bottom: 10px;
-    }
-
-    .main__TitTxtProductividad{
-        margin-left: 15%;
-        margin-bottom: 50px;
-    }
-
-    .main__TextoProductividad{
-        padding-left: 0px;
-    }
-
-    .main__TituloProductividad{
-        padding-left: 0px;
-    }
 
 .gridContacto iframe{
     width: 100%;
@@ -835,7 +829,20 @@
 
 }
 
+@media (max-width: 385px){
+
+    .banner__Fondo h1{
+        font-size: 20px;
+    }
+}
+
 @media (max-width: 360px){
+
+    .header img{
+        height: 60px;
+        width: 270px;
+        margin-left: 0px;
+    }
 
     .banner__Fondo h2{
         font-size: 18px;
