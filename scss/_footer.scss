@@ -37,7 +37,7 @@
     
         &:hover{
             transition: 1s;
-            background-color: $azuloscurohover;
+            background-color: $azulclarohover;
             color:map-get($map:$paleta, $key:'tres');
         }
     }

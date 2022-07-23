@@ -212,6 +212,10 @@
 
 @media (max-width: 768px){
 
+    #oopss #error-text span {
+        font-size: 2.3em;
+    }
+
     .bannerFondoEmpresa{
         height: 250px;
     }
@@ -519,6 +523,19 @@
 
 
 @media (max-width: 580px){
+    
+    #oopss #error-text span {
+        font-size: 1.3em;
+    }
+    
+    #oopss #error-text p.p-a {
+        font-size: 15px;
+    }
+
+    #oopss #error-text p.p-b {
+        font-size: 12px;
+    }
+
     .barraMenu{
         display: flex;
         flex-direction: column;
