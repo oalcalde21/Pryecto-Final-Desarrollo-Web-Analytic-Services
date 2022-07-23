@@ -132,8 +132,9 @@
 
 @media (max-width: 850px){
 
-    .contactoH2{
-        margin-left: 80px;
+    .contactoH1{
+        margin-left: 150px;
+        margin-top:200px;
     }
 
     .gridContacto_Botones{
@@ -149,12 +150,10 @@
     }
 
     .contactoImagen{
-        height: 400px;
+        height: 300px;
     }
 
-    .contactoH2{
-        margin-top: 250px;
-    }
+
 
     .gridNosotros .bannerFondoEmpresa {
         height: 300px;
@@ -198,9 +197,11 @@
         height: 250px;
     }
 
-    .contactoH2{
-        margin-top: 150px;
+    .contactoH1{
+        margin-left: 150px;
+        margin-top:170px;
     }
+
 
     .gridContacto button{
         width: 60px;
@@ -276,6 +277,13 @@
     .gridNosotros .bannerFondoEmpresa {
         height: 300px;
     }
+
+    .contactoH1{
+        margin-left: 110px;
+        margin-top: 170px;
+        font-size: 40px;
+    }
+
 }
 
 @media (max-width: 640px){
@@ -583,10 +591,10 @@
         height: 200px;
     }
 
-    .contactoH2{
-        margin-top: 100px;
-        margin-left: 70px;
-        font-size: 20px;
+    .contactoH1{
+        margin-top: 130px;
+        margin-left: 110px;
+        font-size: 30px;
     }
 
     .gridContacto{
@@ -809,11 +817,12 @@
 }
 
 .contactoImagen{
-    height: 120px;
+    height: 180px;
 }
 
-.contactoH2{
-    margin-top: 70px;
+.contactoH1{
+    margin-top: 110px;
+    margin-left: 70px;
 }
 
 .gridClientes h4{
@@ -842,6 +851,12 @@
 
     .gridNosotros .bannerFondoEmpresa {
         height: 150px;
+    }
+
+    .contactoH1{
+        margin-top: 130px;
+        margin-left: 60px;
+        font-size: 20px;
     }
 
 }

@@ -801,6 +801,7 @@ footer div {
   border: none;
   cursor: pointer;
   outline: none;
+  margin-top: 30px;
 }
 .gridNosotros .botonNosotros:hover {
   transition: all 1s;
@@ -969,43 +970,6 @@ footer div {
   border-radius: 20px;
   overflow: hidden;
 }
-.card2__Content {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 20px;
-  background-color: rgb(6, 24, 52);
-  border-top-left-radius: 20px;
-  transform: translateY(70px);
-  transition: transform 0.25s;
-}
-.card2__Content::before {
-  content: "";
-  position: absolute;
-  top: -47px;
-  right: -35px;
-  width: 85px;
-  height: 120px;
-  transform: rotate(-120deg);
-  border-radius: 100%;
-  box-shadow: inset 48px 48px rgb(6, 24, 52);
-}
-.card2__Title {
-  color: #ffffff;
-  line-height: 15px;
-}
-.card2__Subtitle {
-  display: block;
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-.card2__Description {
-  font-size: 14px;
-  opacity: 0;
-  transition: opacity 0.5s;
-  width: 90%;
-}
 
 .card2:hover .card__Content {
   transform: translateY(0);
@@ -1026,43 +990,6 @@ footer div {
   background-size: cover;
   border-radius: 20px;
   overflow: hidden;
-}
-.card3__Content {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 20px;
-  background-color: rgb(6, 24, 52);
-  border-top-left-radius: 20px;
-  transform: translateY(70px);
-  transition: transform 0.25s;
-}
-.card3__Content::before {
-  content: "";
-  position: absolute;
-  top: -47px;
-  right: -35px;
-  width: 85px;
-  height: 120px;
-  transform: rotate(-120deg);
-  border-radius: 100%;
-  box-shadow: inset 48px 48px rgb(6, 24, 52);
-}
-.card3__Title {
-  color: #ffffff;
-  line-height: 15px;
-}
-.card3__Subtitle {
-  display: block;
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-.card3__Description {
-  font-size: 14px;
-  opacity: 0;
-  transition: opacity 0.5s;
-  width: 90%;
 }
 
 .card3:hover .card__Content {
@@ -1086,43 +1013,6 @@ footer div {
   overflow: hidden;
   margin-top: 40px;
 }
-.card4__Content {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 20px;
-  background-color: rgb(6, 24, 52);
-  border-top-left-radius: 20px;
-  transform: translateY(70px);
-  transition: transform 0.25s;
-}
-.card4__Content::before {
-  content: "";
-  position: absolute;
-  top: -47px;
-  right: -35px;
-  width: 85px;
-  height: 120px;
-  transform: rotate(-120deg);
-  border-radius: 100%;
-  box-shadow: inset 48px 48px rgb(6, 24, 52);
-}
-.card4__Title {
-  color: #ffffff;
-  line-height: 15px;
-}
-.card4__Subtitle {
-  display: block;
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-.card4__Description {
-  font-size: 14px;
-  opacity: 0;
-  transition: opacity 0.5s;
-  width: 90%;
-}
 
 .card4:hover .card__Content {
   transform: translateY(0);
@@ -1145,43 +1035,6 @@ footer div {
   overflow: hidden;
   margin-top: 40px;
 }
-.card5__Content {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 20px;
-  background-color: rgb(6, 24, 52);
-  border-top-left-radius: 20px;
-  transform: translateY(70px);
-  transition: transform 0.25s;
-}
-.card5__Content::before {
-  content: "";
-  position: absolute;
-  top: -47px;
-  right: -35px;
-  width: 85px;
-  height: 120px;
-  transform: rotate(-120deg);
-  border-radius: 100%;
-  box-shadow: inset 48px 48px rgb(6, 24, 52);
-}
-.card5__Title {
-  color: #ffffff;
-  line-height: 15px;
-}
-.card5__Subtitle {
-  display: block;
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-.card5__Description {
-  font-size: 14px;
-  opacity: 0;
-  transition: opacity 0.5s;
-  width: 90%;
-}
 
 .card5:hover .card__Content {
   transform: translateY(0);
@@ -1203,43 +1056,6 @@ footer div {
   border-radius: 20px;
   overflow: hidden;
   margin-top: 40px;
-}
-.card6__Content {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 20px;
-  background-color: rgb(6, 24, 52);
-  border-top-left-radius: 20px;
-  transform: translateY(70px);
-  transition: transform 0.25s;
-}
-.card6__Content::before {
-  content: "";
-  position: absolute;
-  top: -47px;
-  right: -35px;
-  width: 85px;
-  height: 120px;
-  transform: rotate(-120deg);
-  border-radius: 100%;
-  box-shadow: inset 48px 48px rgb(6, 24, 52);
-}
-.card6__Title {
-  color: #ffffff;
-  line-height: 15px;
-}
-.card6__Subtitle {
-  display: block;
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-.card6__Description {
-  font-size: 14px;
-  opacity: 0;
-  transition: opacity 0.5s;
-  width: 90%;
 }
 
 .card6:hover .card__Content {
@@ -1523,8 +1339,9 @@ input::-webkit-inner-spin-button {
   }
 }
 @media (max-width: 850px) {
-  .contactoH2 {
-    margin-left: 80px;
+  .contactoH1 {
+    margin-left: 150px;
+    margin-top: 200px;
   }
   .gridContacto_Botones {
     margin-left: 10px;
@@ -1536,10 +1353,7 @@ input::-webkit-inner-spin-button {
     height: 400px;
   }
   .contactoImagen {
-    height: 400px;
-  }
-  .contactoH2 {
-    margin-top: 250px;
+    height: 300px;
   }
   .gridNosotros .bannerFondoEmpresa {
     height: 300px;
@@ -1572,8 +1386,9 @@ input::-webkit-inner-spin-button {
   .contactoImagen {
     height: 250px;
   }
-  .contactoH2 {
-    margin-top: 150px;
+  .contactoH1 {
+    margin-left: 150px;
+    margin-top: 170px;
   }
   .gridContacto button {
     width: 60px;
@@ -1629,6 +1444,11 @@ input::-webkit-inner-spin-button {
   }
   .gridNosotros .bannerFondoEmpresa {
     height: 300px;
+  }
+  .contactoH1 {
+    margin-left: 110px;
+    margin-top: 170px;
+    font-size: 40px;
   }
 }
 @media (max-width: 640px) {
@@ -1862,10 +1682,10 @@ input::-webkit-inner-spin-button {
   .contactoImagen {
     height: 200px;
   }
-  .contactoH2 {
-    margin-top: 100px;
-    margin-left: 70px;
-    font-size: 20px;
+  .contactoH1 {
+    margin-top: 130px;
+    margin-left: 110px;
+    font-size: 30px;
   }
   .gridContacto {
     width: 90%;
@@ -2038,10 +1858,11 @@ input::-webkit-inner-spin-button {
     width: 100%;
   }
   .contactoImagen {
-    height: 120px;
+    height: 180px;
   }
-  .contactoH2 {
-    margin-top: 70px;
+  .contactoH1 {
+    margin-top: 110px;
+    margin-left: 70px;
   }
   .gridClientes h4 {
     font-size: 20px;
@@ -2063,6 +1884,11 @@ input::-webkit-inner-spin-button {
   }
   .gridNosotros .bannerFondoEmpresa {
     height: 150px;
+  }
+  .contactoH1 {
+    margin-top: 130px;
+    margin-left: 60px;
+    font-size: 20px;
   }
 }
 /* Animacion Barras */

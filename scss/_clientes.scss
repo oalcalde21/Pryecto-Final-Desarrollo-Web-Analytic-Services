@@ -114,47 +114,6 @@
     border-radius: 20px;
     overflow: hidden;
 
-    &__Content{
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        padding: 20px;
-        background-color: rgb(6, 24, 52);
-        border-top-left-radius: 20px;
-        transform: translateY(70px);
-        transition: transform .25s;
-    
-        &::before {
-            content: '';
-            position: absolute;
-            top: -47px;
-            right: -35px;
-            width: 85px;
-            height: 120px;
-            transform: rotate(-120deg);
-            border-radius: 100%;
-            box-shadow: inset 48px 48px rgb(6, 24, 52);
-        }
-    }
-
-    &__Title{
-        color: #ffffff;
-        line-height: 15px;
-    }
-
-    &__Subtitle{
-        display: block;
-        font-size: 12px;
-        margin-bottom: 10px;
-    }
-
-    &__Description{
-        font-size: 14px;
-        opacity: 0;
-        transition: opacity .5s;
-        width: 90%;
-    }
 }
 
 .card2:hover .card__Content{
@@ -179,48 +138,6 @@
     background-size: cover;
     border-radius: 20px;
     overflow: hidden;
-
-    &__Content{
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        padding: 20px;
-        background-color: rgb(6, 24, 52);
-        border-top-left-radius: 20px;
-        transform: translateY(70px);
-        transition: transform .25s;
-    
-        &::before {
-            content: '';
-            position: absolute;
-            top: -47px;
-            right: -35px;
-            width: 85px;
-            height: 120px;
-            transform: rotate(-120deg);
-            border-radius: 100%;
-            box-shadow: inset 48px 48px rgb(6, 24, 52);
-        }
-    }
-
-    &__Title{
-        color: #ffffff;
-        line-height: 15px;
-    }
-
-    &__Subtitle{
-        display: block;
-        font-size: 12px;
-        margin-bottom: 10px;
-    }
-
-    &__Description{
-        font-size: 14px;
-        opacity: 0;
-        transition: opacity .5s;
-        width: 90%;
-    }
 }
 
 .card3:hover .card__Content{
@@ -247,48 +164,6 @@
     border-radius: 20px;
     overflow: hidden;
     margin-top: 40px;
-
-    &__Content{
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        padding: 20px;
-        background-color: rgb(6, 24, 52);
-        border-top-left-radius: 20px;
-        transform: translateY(70px);
-        transition: transform .25s;
-    
-        &::before {
-            content: '';
-            position: absolute;
-            top: -47px;
-            right: -35px;
-            width: 85px;
-            height: 120px;
-            transform: rotate(-120deg);
-            border-radius: 100%;
-            box-shadow: inset 48px 48px rgb(6, 24, 52);
-        }
-    }
-
-    &__Title{
-        color: #ffffff;
-        line-height: 15px;
-    }
-
-    &__Subtitle{
-        display: block;
-        font-size: 12px;
-        margin-bottom: 10px;
-    }
-
-    &__Description{
-        font-size: 14px;
-        opacity: 0;
-        transition: opacity .5s;
-        width: 90%;
-    }
 }
 
 .card4:hover .card__Content{
@@ -315,48 +190,6 @@
     border-radius: 20px;
     overflow: hidden;
     margin-top: 40px;
-
-    &__Content{
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        padding: 20px;
-        background-color: rgb(6, 24, 52);
-        border-top-left-radius: 20px;
-        transform: translateY(70px);
-        transition: transform .25s;
-    
-        &::before {
-            content: '';
-            position: absolute;
-            top: -47px;
-            right: -35px;
-            width: 85px;
-            height: 120px;
-            transform: rotate(-120deg);
-            border-radius: 100%;
-            box-shadow: inset 48px 48px rgb(6, 24, 52);
-        }
-    }
-
-    &__Title{
-        color: #ffffff;
-        line-height: 15px;
-    }
-
-    &__Subtitle{
-        display: block;
-        font-size: 12px;
-        margin-bottom: 10px;
-    }
-
-    &__Description{
-        font-size: 14px;
-        opacity: 0;
-        transition: opacity .5s;
-        width: 90%;
-    }
 }
 
 .card5:hover .card__Content{
@@ -383,48 +216,6 @@
     border-radius: 20px;
     overflow: hidden;
     margin-top: 40px;
-
-    &__Content{
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        padding: 20px;
-        background-color: rgb(6, 24, 52);
-        border-top-left-radius: 20px;
-        transform: translateY(70px);
-        transition: transform .25s;
-    
-        &::before {
-            content: '';
-            position: absolute;
-            top: -47px;
-            right: -35px;
-            width: 85px;
-            height: 120px;
-            transform: rotate(-120deg);
-            border-radius: 100%;
-            box-shadow: inset 48px 48px rgb(6, 24, 52);
-        }
-    }
-
-    &__Title{
-        color: #ffffff;
-        line-height: 15px;
-    }
-
-    &__Subtitle{
-        display: block;
-        font-size: 12px;
-        margin-bottom: 10px;
-    }
-
-    &__Description{
-        font-size: 14px;
-        opacity: 0;
-        transition: opacity .5s;
-        width: 90%;
-    }
 }
 
 .card6:hover .card__Content{
