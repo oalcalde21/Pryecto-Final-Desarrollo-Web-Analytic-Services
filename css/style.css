@@ -1891,6 +1891,11 @@ input::-webkit-inner-spin-button {
   }
 }
 @media (max-width: 385px) {
+  .header img {
+    height: 60px;
+    width: 270px;
+    margin-left: 0px;
+  }
   .banner__Fondo h1 {
     font-size: 20px;
   }
